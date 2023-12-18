@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business Website</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="jquery-3.7.1.min.js"></script>
     <meta name="description" content="This is a business website" />
   </head>
   <body>
@@ -16,7 +17,7 @@
               <img class="logo_img" src="icons/logo.png" alt="" /></div
           ></a>
           <div class="top_menu">
-            <div class="h_link"><a href="about.html">About</a></div>
+            <div class="h_link" id="toabout"><a href="#info-section">About</a></div>
             <div class="h_link"><a href="services.html">Services</a></div>
             <div class="h_link"><a href="clients.html">Clients</a></div>
             <div class="h_link"><a href="contact.html">Contact</a></div>
@@ -107,7 +108,7 @@
 
 
 
-    <div class="info">
+    <div class="info" id="info-section">
       <div class="desktop_size">
 
         <div class="section_title">What we can do for you?</div>
@@ -122,5 +123,46 @@
         </div>
       </div>
     </div>
+
+
+<div class="services_section">
+  <div class="desktop_size">
+    <div class="services_wrapper">
+
+      <div class="service_widget">
+        <div class="s_w_t">Web Development</div>
+        <div class="s_w_d">We can build your online presence</div>
+      </div>
+
+
+      <!-- widget 2 -->
+      <div class="service_widget">
+        <div class="s_w_t">Maintenance</div>
+        <div class="s_w_d">We make sure everything works fine</div>
+      </div>
+
+
+      <!-- widget 3 -->
+      <div class="service_widget">
+        <div class="s_w_t">Marketing</div>
+        <div class="s_w_d">We can help you grow your online presence</div>
+      </div>
+
+
+      <!-- widget 4 -->
+
+      <div class="service_widget">
+        <div class="s_w_t">Customer support</div>
+        <div class="s_w_d">We can fix all of your issues</div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>

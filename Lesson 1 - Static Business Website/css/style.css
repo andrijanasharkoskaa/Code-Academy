@@ -208,3 +208,33 @@ h1 {
   margin-bottom: 34px;
   font-size: 30px;
 }
+
+.services_section {
+  padding-top: 100px 0;
+}
+
+.services_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.service_widget {
+  width: 50%;
+  height: 160px;
+  margin-bottom: 40px;
+  text-align: center;
+  border: 1px solid #dedede;
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.s_w_t {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.s_w_d {
+}

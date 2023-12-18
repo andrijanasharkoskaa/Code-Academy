@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.left-arrow {
+  padding: 20px;
+  font-size: 24px;
+}
+.search-flights-header {
+  font-size: 24px;
+  font-weight: 900;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  padding-left: 20px;
+}
+.widgets {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: rgb(173, 172, 172);
+}
+.widget-options {
+  border: 1px solid rgb(173, 172, 172);
+  border-radius: 50px;
+  width: 30%;
+  padding: 14px 12px;
+  text-align: center;
+  font-size: 12px;
+}
+.padding-right {
+  padding-right: 10px;
+}
+.selected {
+  background-color: black;
+  color: white;
+}
+
+.input-form {
+  width: 100%;
+  padding: 10px;
+  color: rgb(209, 208, 208);
+}
+
+.input-form input {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid rgb(234, 233, 233);
+  box-shadow: 1px 2px rgb(234, 233, 233);
+  border-radius: 2px;
+  color: rgb(197, 196, 196);
+  padding-left: 36px;
+}
+.flex-class {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(209, 208, 208);
+  margin-left: 2px;
+  width: 100%;
+  height: auto;
+}
+
+.block-class {
+  display: block;
+  color: rgb(209, 208, 208);
+}
+.btn {
+  background-color: black;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 40px;
+  font-weight: 600;
+  /* margin-top: 40px; */
+}
+.input-icons .fa-plane-up {
+  position: absolute;
+  top: 26%;
+  padding: 4px 10px;
+}
+
+.input-icons {
+  width: 100%;
+  margin-top: 12px;
+}
+.input-icons .fa-location-dot {
+  position: absolute;
+  top: 34%;
+  padding: 4px 10px;
+}
+
+.input-icons .fa-business-time {
+  position: absolute;
+  top: 44%;
+  right: 40%;
+  padding: 4px 10px;
+}
+.input-icons .fa-user {
+  position: absolute;
+  bottom: 46%;
+  left: 5%;
+  padding: 4px 10px;
+  padding-right: 10px;
+  font-size: 10px;
+}
+.input-icons .fa-calendar-days {
+  position: absolute;
+  bottom: 54%;
+  left: 5%;
+  padding: 4px 6px;
+  font-size: 12px;
+}
+.input-icons .fa-arrow-right-arrow-left {
+  position: absolute;
+  top: 29%;
+  right: 5%;
+  padding: 4px 6px;
+  font-size: 30px;
+  transform: rotate(90deg);
+  color: black;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.line {
+  margin: 0 auto;
+  background-color: gray;
+  opacity: 0.6;
+  width: 60px;
+  height: 4px;
+  margin-top: 30px;
+}
+.subheading {
+  text-align: left;
+  color: black;
+  font-weight: 800;
+  padding-left: 20px;
+  padding-top: 30px;
+  font-size: 18px;
+}
+.flight-widgets {
+  display: block;
+  width: 100%;
+}
+.widget {
+  display: flex;
+  justify-content: flex-start;
+  width: 70%;
+}
+.text {
+  padding-left: 10px;
+  font-weight: 800;
+  margin-top: 30px;
+}
+.desc {
+  padding-left: 50px;
+  color: gray;
+  opacity: 0.4;
+}
+
+.fa-suitcase,
+.fa-filter-circle-dollar {
+  font-size: 20px;
+  padding-left: 20px;
+  margin-top: 38px;
+}
+.flight {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* align-self: center; */
+}
+.flight .search-flights-header {
+  font-size: 18px;
+  padding-left: 20%;
+}
+.your-trip {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.your-trip .widget-options {
+  width: 80px;
+  height: 28px;
+  padding: 5px 4px;
+  opacity: 0.2;
+  margin-left: 20px;
+}
+.destination {
+  font-weight: 800;
+  font-size: 20px;
+}
+.your-trip .fa-sliders {
+  margin-left: 200px;
+  margin-top: -10px;
+  transform: rotate(90deg);
+}
+
+.trip-desc,
+.your-trip,
+.date {
+  padding-left: 10px;
+}
+
+.trip-desc,
+.date {
+  color: rgb(167, 166, 166);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.date {
+  font-size: 12px;
+}
+.flights-suggested {
+  width: 94%;
+  height: auto;
+  box-shadow: 4px 4px 4px 2px rgb(209, 208, 208);
+  padding: 20px;
+  margin: 0 auto;
+}
+.logo-price {
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  margin-top: 40px;
+}
+.flights-suggested img {
+  height: auto;
+  width: 20%;
+  margin-top: 30px;
+}
+.time-flight {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  /* margin-bottom: 20px; */
+}
+.flight-info {
+  padding: 10px;
+}
+.hour {
+  font-weight: 800;
+}
+.place-time {
+  color: rgb(167, 167, 167);
+  font-size: 12px;
+  width: 60px;
+}
+.flight-no {
+  margin-left: 100px;
+}
+.padding-top {
+  padding-top: 8px;
+}
+.green {
+  color: rgb(67, 214, 67);
+}
+.duration {
+  color: rgb(206, 204, 204);
+  margin-top: 4px;
+  margin-left: 8px;
+}
+.duration span {
+  color: black;
+}
+.orange {
+  color: orange;
+}
+.red {
+  color: red;
+}
+.black-bg {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-bottom: 30px;
+}
+.business-class {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  color: black;
+  height: auto;
+  text-align: center;
+}
+.tickets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.b-class {
+  width: 120px;
+  height: 26px;
+  text-align: center;
+  padding: 4px 2px;
+}
+.slm {
+  margin-left: 40px;
+}
+.business-class .fa-plane {
+  color: gray;
+  opacity: 0.4;
+}
+.slm,
+.btl {
+  font-weight: 800;
+}
+.four-tickets {
+  font-weight: 800;
+  text-align: left;
+  margin: 20px 0 40px 0;
+}
+.passengers-part {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.passengers {
+  width: 50%;
+  text-align: left;
+}
+.date-passengers {
+  width: 50%;
+  text-align: left;
+}
+.pass,
+.flight-number,
+.class-type,
+.date2,
+.gate,
+.seat {
+  color: gray;
+  opacity: 0.6;
+  padding: 20px 0 10px 0;
+}
+.adults,
+.no,
+.busines,
+.actual-date,
+.gate-no,
+.seat-no {
+  font-weight: 800;
+}
+.dashed-line {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  color: gray;
+  opacity: 0.4;
+  width: 100%;
+}
+.barcode-part {
+  width: 100%;
+  text-align: center;
+}
+.barcode {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.barcode-no {
+  font-size: 12px;
+  padding-bottom: 80px;
+}
+.share {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  font-size: 12px;
+  padding-bottom: 30px;
+}
+.friends {
+  padding-left: 10px;
+}
