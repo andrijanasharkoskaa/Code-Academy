@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  width: 68%;
+  height: 860px;
+  /* border: 1px solid black; */
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.left-fixed-section {
+  width: 20%;
+  height: inherit;
+  /* border: 1px solid red; */
+  position: fixed;
+  left: 16%;
+}
+.middle-scrollable-section {
+  width: 40%;
+  height: 1600px;
+  border: 1px solid rgb(240, 239, 239);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.for-you:hover,
+.following:hover,
+.fa-gear:hover {
+  background-color: rgb(244, 232, 243);
+  cursor: pointer;
+}
+.for-you,
+.following,
+.fa-gear {
+  padding-top: 10px;
+}
+.for-you {
+  text-align: center;
+  width: 30%;
+  height: 40px;
+  font-weight: 700;
+}
+.following {
+  width: 30%;
+  height: 40px;
+  text-align: center;
+  color: gray;
+  font-weight: 700;
+}
+.fa-gear {
+  width: 10%;
+  height: 40px;
+  text-align: center;
+}
+
+.what-is-happening {
+  width: 100%;
+  height: 166px;
+  border: 1px solid rgb(240, 239, 239);
+}
+.div1 {
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px;
+  font-size: 20px;
+}
+.what {
+  margin-left: 10px;
+  color: gray;
+  border: none;
+  resize: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+}
+
+.multiple-icons {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.post2 {
+  background-color: rgb(65, 150, 254);
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 900;
+  opacity: 0.6;
+  margin-right: 10px;
+}
+.multiple-icons button {
+  margin-left: 150px;
+}
+
+.post-one {
+  width: 100%;
+  height: 600px;
+  border: 1px solid rgb(240, 239, 239);
+  margin-top: 4px;
+  padding: 20px;
+}
+.image-and-username {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.image-post {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.name-surname {
+  font-weight: 700;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.fa-check {
+  color: blue;
+  margin-right: 10px;
+}
+.user-n {
+  color: gray;
+  margin-right: 10px;
+}
+
+.hour {
+  margin-right: 80px;
+  color: gray;
+}
+.lorem-ipsum {
+  margin-right: 30px;
+  padding: 20px;
+  width: 94%;
+  font-size: 14px;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.post-image {
+  margin: 10px;
+  width: 94%;
+  border-radius: 20px;
+}
+.widgets-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.comments {
+  margin-left: 16px;
+}
+.fa-comment,
+.fa-repeat,
+.fa-heart,
+.fa-chart-column {
+  padding: 4px;
+}
+.book {
+  margin-left: 40px;
+}
+.right-fixed-section {
+  width: 20%;
+  height: inherit;
+  /* border: 1px solid blue; */
+  position: fixed;
+  right: 16%;
+}
+.nav-menu {
+  display: block;
+}
+.list-item {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.heading {
+  margin-left: 30px;
+  font-size: 22px;
+  color: black;
+  align-items: center;
+}
+.icons {
+  padding-left: 10px;
+  font-size: 22px;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
+.nav-menu a:hover {
+  color: rgb(112, 108, 108);
+}
+.margin-left {
+  margin-left: 20px;
+}
+.communities {
+  margin-left: -1px;
+  padding-left: 20px;
+}
+.post {
+  width: 240px;
+  height: 50px;
+  background-color: rgb(65, 150, 254);
+  color: white;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.8;
+  margin: 10px 40px;
+}
+
+.post:hover {
+  color: rgb(65, 150, 254);
+  background-color: white;
+  border: 1px solid rgb(65, 150, 254);
+  cursor: pointer;
+}
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-left: 20px;
+  margin-top: 90px;
+}
+.profile-username {
+}
+.m-l {
+  margin-left: 120px;
+}
+.fa-user-secret {
+  font-size: 28px;
+}
+.username {
+  margin-left: 74px;
+  color: gray;
+  margin-top: -26px;
+  font-size: 14px;
+}
+.search {
+  text-align: center;
+}
+
+.search-input {
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(242, 240, 240);
+  font-size: 16px;
+}
+.search-input:focus {
+  border-radius: 30px;
+  border: 1px solid rgb(65, 150, 254);
+}
+.subscribe {
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 80%;
+}
+.premium {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.subsc {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 20px;
+  font-size: 16px;
+}
+.subsc:hover {
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+.trends-for-you {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 40px;
+  padding-left: 42px;
+}
+.my-trends {
+  display: flex;
+  justify-content: space-around;
+}
+.trending-music {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-top: 20px;
+  color: gray;
+  font-size: 14px;
+}
+.move {
+  margin-right: 180px;
+}
+.trending-music .fa-ellipsis {
+  color: black;
+}
+.rihanna {
+  font-weight: 700;
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.views {
+  padding-left: 10px;
+  color: gray;
+  font-size: 12px;
+}
+.show-more {
+  color: blue;
+  padding: 50px;
+}
+.right-fixed-section a {
+  text-decoration: none;
+}
+.margin-bottom {
+  margin-bottom: 10px;
+}
+.who-to-follow {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 20px;
+  margin-left: 30px;
+}
+.follow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 48px;
+  margin-bottom: 20px;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.name {
+  margin-right: 20px;
+}
+.btn-follow {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+.name2 {
+  font-weight: 700;
+}
+.username2 {
+  color: gray;
+  font-size: 14px;
+}
