@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/28d406b2ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Select a Plan</title>
+  </head>
+  <body>
+    
+
+    <input type="button" value="Login" class="login-btn" id="login-btn" />
+
+    <div id="login-form" class="hidden">
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+  
+        <button type="submit" id="login">Login</button>
+      </form>
+    </div>
+    </div>
+
+
+    <div class="wrapper" id="wrapper">
+      <div class="plans" id="basic">
+        <div class="price-section">
+          <div class="price">$26</div>
+          <div class="desc">per month</div>
+        </div>
+
+        <div class="desc-section">
+          <div class="type">Basic</div>
+          <div class="description">
+            <div class="sections">
+              <i class="fa-solid fa-check icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+            <div class="sections">
+              <i class="fa-solid fa-xmark icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+            <div class="sections">
+              <i class="fa-solid fa-xmark icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+            <div class="sections">
+              <i class="fa-solid fa-xmark icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+          </div>
+          <button type="button" class="choose-btn">Choose</button>
+        </div>
+      </div>
+
+      <div class="plans" id="premium">
+        <div class="price-section">
+          <div class="price red-text">$59</div>
+          <div class="desc red-text">per month</div>
+        </div>
+
+        <div class="desc-section purple">
+          <div class="type">Premium</div>
+          <div class="description">
+            <div class="sections">
+              <i class="fa-solid fa-check icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+            <div class="sections">
+              <i class="fa-solid fa-check icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+            <div class="sections">
+              <i class="fa-solid fa-xmark icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+            <div class="sections">
+              <i class="fa-solid fa-xmark icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+          </div>
+          <button type="button" class="choose-btn premium-btn">Choose</button>
+        </div>
+      </div>
+
+      <div class="plans" id="ultimate">
+        <div class="price-section">
+          <div class="price purple-text">$98</div>
+          <div class="desc purple-text">per month</div>
+        </div>
+
+        <div class="desc-section pink">
+          <div class="type ultimate">Ultimate</div>
+          <div class="description">
+            <div class="sections">
+              <i class="fa-solid fa-check icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+            <div class="sections">
+              <i class="fa-solid fa-check icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+            <div class="sections">
+              <i class="fa-solid fa-check icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+            <div class="sections">
+              <i class="fa-solid fa-check icons"></i> Lorem ipsum dolor sit
+              amet.
+            </div>
+          </div>
+          <button type="button" class="choose-btn ultimate-btn">Choose</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
