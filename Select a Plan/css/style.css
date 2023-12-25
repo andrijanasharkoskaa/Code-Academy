@@ -4,6 +4,12 @@
   padding: 0;
   margin: 0;
 }
+.bg-img {
+  background-image: url("https://files.123freevectors.com/wp-content/original/128890-abstract-purple-green-and-white-wave-background-vector-illustration.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
 .hidden {
   display: none;
 }
@@ -41,6 +47,17 @@ input::-webkit-inner-spin-button {
   text-align: center;
   color: purple;
 }
+.exit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  color: purple;
+  padding: 10px;
+}
+.exit:hover {
+  color: rgb(229, 68, 229);
+}
 .age-div {
   text-align: center;
 }
@@ -56,6 +73,8 @@ input::-webkit-inner-spin-button {
   border: 1px solid pink;
   padding: 40px;
   border-radius: 10px;
+  position: relative;
+  margin-top: 80px;
 }
 
 label {
@@ -96,15 +115,36 @@ input [type="text"],
   padding: 4px;
   outline: none;
 }
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.list ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list ul li a {
+  text-decoration: none;
+  color: white;
+}
+.list ul li {
+  list-style-type: none;
+  padding: 26px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.text {
+  font-size: 20px;
+  color: rgb(221, 99, 221);
+  font-weight: 900;
+}
 .login-btn {
   padding: 12px 40px;
-  margin: 40px;
-  color: white;
-  background-image: linear-gradient(
-    rgb(156, 224, 156),
-    purple,
-    rgb(229, 180, 180)
-  );
+  margin: 20px;
+  color: purple;
+  background-color: white;
   border: none;
   border-radius: 26px;
   font-size: 20px;
