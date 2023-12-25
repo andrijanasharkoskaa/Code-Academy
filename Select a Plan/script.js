@@ -4,10 +4,11 @@ $(document).ready(function () {
     $("#wrapper").toggleClass("hidden");
   });
 });
-
 $(document).ready(function () {
-  $("#basic").click(function (e) {
-    $("#basic").css("border", "3px solid blue");
+  $("#login-btn").click(function () {
+    $("#basic").toggleClass("hidden");
+    $("#premium").toggleClass("hidden");
+    $("#ultimate").toggleClass("hidden");
   });
 });
 
