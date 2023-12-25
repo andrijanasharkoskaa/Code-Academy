@@ -17,7 +17,16 @@
 
     <input type="button" value="Login" class="login-btn" id="login-btn" />
 
+
+   
+
     <div id="login-form" class="hidden">
+
+      <div class="age-div">
+        <label for="age">Enter your age:</label>
+        <input type="number" class="age" id="age" onkeyup="checkEnter(event)"></div>
+<div class="okmessage" id="okmessage">Success! You can log in / Create an account on our site!</div>
+<div class="nomessage" id="nomessage">Failure! You must be at least 18 years old to log in!</div>
       <form>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required />
@@ -33,6 +42,12 @@
     
     </div>
 
+    <form>
+      <input id="selected_plan" type="hidden" value="">
+      
+      </form>
+
+    
 
     <div class="wrapper" id="wrapper">
       <div class="plans" id="basic">
