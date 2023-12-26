@@ -3,105 +3,70 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-.wrapper {
-  margin: 0 auto;
-  background-color: #313131;
-  width: 50%;
-  height: 600px;
-  margin-top: 100px;
-}
-.date-value {
-  text-align: center;
-  width: 44%;
-  height: 50px;
-  background-color: #54595f;
-  border: 2px solid gray;
-  border-radius: 10px;
-  margin: 0 auto;
-  margin-top: 30px;
-  color: white;
-  text-align: left;
-  font-size: 18px;
-}
-.calendar {
-  text-align: center;
-  width: 44%;
-  height: 360px;
-  background-color: #54595f;
-  border: 2px solid gray;
-  border-radius: 10px;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-.heading {
-  color: white;
-  text-align: center;
-  font-size: 24px;
-  padding-top: 60px;
-}
 .month {
   display: flex;
-  justify-content: space-evenly;
-  color: white;
-  font-size: 24px;
-  font-weight: 600;
-  padding-top: 10px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 100px;
+  font-size: 30px;
 }
-.arrow-left,
+.arrow-left {
+  margin-right: 14px;
+  font-weight: 900;
+  color: gray;
+  padding: 0 4px;
+}
 .arrow-right {
-  transform: rotate(180deg);
-  background-color: rgb(158, 157, 157);
-  padding: 2px 6px;
-  border-radius: 6px;
+  margin-left: 14px;
+  font-weight: 900;
+  color: gray;
+  padding: 0 4px;
 }
 .arrow-left:hover,
 .arrow-right:hover {
+  border: 1px solid red;
+  background-color: gray;
+  color: white;
   cursor: pointer;
+}
+.december {
+  color: red;
+}
+
+.week {
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 .days {
-  display: flex;
-  justify-content: space-between;
+  padding: 8px;
+  margin: 10px;
+  color: gray;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  width: 20%;
+  margin: 0 auto;
+
+  /* border: 1px solid black; */
   justify-content: center;
   align-items: center;
-  width: 100%;
-  font-size: 20px;
-  margin-top: 20px;
+  padding: 10px;
 }
-.days-class {
-  width: 13%;
-  height: 26px;
-  color: white;
+.grid-item {
+  padding: 10px;
   text-align: center;
-  margin-top: 10px;
-  opacity: 0.6;
-  padding: 8px;
-  margin-right: 4px;
+  width: 40px;
+  border: 1px solid red;
+  color: gray;
 }
-.days-numbered {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 4px;
-  width: 100%;
-  margin-bottom: 18px;
+.grid-item:nth-child(1) {
+  grid-column: 5;
 }
-.numbered-days {
-  width: 55px;
-  height: 30px;
-  background-color: #666;
-  border-radius: 8px;
+.grid-item:hover {
+  background-color: gray;
   color: white;
-  text-align: center;
-  margin-top: 14px;
-  opacity: 0.6;
-  padding: 4px;
-  font-weight: 600;
-}
-.numbered-days:hover {
-  cursor: pointer;
-  background-color: blue;
-}
-.active {
-  background-color: blue;
 }

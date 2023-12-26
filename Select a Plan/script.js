@@ -74,16 +74,19 @@ function checkEnter(e) {
     const okMessage = document.getElementById("okmessage");
     const noMessage = document.getElementById("nomessage");
     console.log(ageInput);
+
+    okMessage.style.display = "none";
+    noMessage.style.display = "none";
+
     if (ageInput >= 18) {
       setTimeout(() => {
-        noMessage.style.display = "none";
         okMessage.style.display = "block";
       }, 500);
     } else {
       setTimeout(() => {
         noMessage.style.display = "block";
-        okMessage.style.display = "none";
       }, 500);
     }
   }
+  ageInput.value = "";
 }
