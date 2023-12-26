@@ -88,5 +88,4 @@ function checkEnter(e) {
       }, 500);
     }
   }
-  ageInput.value = "";
 }
