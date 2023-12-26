@@ -13,7 +13,7 @@
     <title>Select a Plan</title>
   </head>
   <body>
-    <div class="bg-img">
+   
     <div class="menu">
       <div class="list">
         <ul>
@@ -27,15 +27,14 @@
       <input type="button" value="Login" class="login-btn" id="login-btn" />
     </div>
 
-  </div>
 
 
    
 
     <div id="login-form" class="hidden">
-      <i class="fa-solid fa-xmark exit"></i>
+      <i class="fa-solid fa-xmark" id="exit"></i>
       <div class="age-div">
-        <div class="text">Let's check your eligibility</div>
+        <div class="text">Let's check your eligibility!</div>
         <label for="age">Enter your age:</label>
         <input type="number" class="age" id="age" onkeyup="checkEnter(event)"></div>
       <div class="okmessage" id="okmessage">Success! You can log in / Create an account on our site!</div>
@@ -60,7 +59,7 @@
       
       </form>
 
-    
+     <div class="bg-img">
 
     <div class="wrapper" id="wrapper">
       <div class="plans" id="basic">

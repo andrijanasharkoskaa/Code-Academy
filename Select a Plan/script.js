@@ -2,10 +2,26 @@ $(document).ready(function () {
   $("#login-btn").click(function () {
     $("#login-form").toggleClass("hidden");
     $("#wrapper").toggleClass("hidden");
+    $(".bg-img").toggleClass("hidden");
   });
 });
 $(document).ready(function () {
+  $("#exit").click(function () {
+    $("#login-form").toggleClass("hidden");
+    $("#wrapper").toggleClass("hidden");
+    $(".bg-img").toggleClass("hidden");
+  });
+});
+
+$(document).ready(function () {
   $("#login-btn").click(function () {
+    $("#basic").toggleClass("hidden");
+    $("#premium").toggleClass("hidden");
+    $("#ultimate").toggleClass("hidden");
+  });
+});
+$(document).ready(function () {
+  $("#exit").click(function () {
     $("#basic").toggleClass("hidden");
     $("#premium").toggleClass("hidden");
     $("#ultimate").toggleClass("hidden");
