@@ -117,7 +117,7 @@
   height: auto;
   width: 12%;
   padding: 30px;
-  margin: 30px 60px;
+  margin: 0 60px;
 }
 .fa-briefcase,
 .fa-arrow-pointer,
@@ -287,4 +287,30 @@
 }
 #size2 {
   width: 70%;
+}
+.link-clicks {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  width: 74%;
+  height: 300px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.left-section {
+  width: 40%;
+  border: 1px solid black;
+  height: auto;
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  margin-top: 10px;
+}
+
+.right-section {
+  width: 50%;
+  border: 1px solid black;
+  height: auto;
 }
