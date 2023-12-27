@@ -124,10 +124,14 @@
   color: blue;
 }
 .info {
+  margin-right: 10px;
 }
 .title {
   font-size: 14px;
   color: gray;
+}
+.fa-arrow-pointer {
+  margin-left: 20px;
 }
 .numbers {
   font-size: 24px;
@@ -226,13 +230,14 @@
 .time {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 16px 0;
 }
 .desc {
   font-weight: 900;
 }
 .num {
   color: gray;
+  margin-right: 10px;
 }
 .slider {
   display: flex;
