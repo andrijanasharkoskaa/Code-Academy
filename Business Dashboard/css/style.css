@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+.left-arrow {
+  border: 1px solid rgb(244, 229, 232);
+  padding: 18px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  border: 1px solid rgb(244, 229, 232);
+  width: 100%;
+  align-items: center;
+  border-radius: 10px;
+}
+.reports {
+  padding: 0 100px;
+  margin-right: 800px;
+}
+.initials {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.initials2 {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.share-btn {
+  width: 100px;
+  height: 34px;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 800;
+  padding: 6px 0;
+}
+.preview-btn {
+  background-color: blue;
+  color: white;
+  width: 100px;
+  height: 34px;
+  text-align: center;
+  font-weight: 800;
+  border-radius: 6px;
+  margin-right: 30px;
+  padding: 6px 0;
+}
+.fa-comment {
+  font-size: 24px;
+}
+.share-btn:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+.preview-btn:hover {
+  background-color: white;
+  border: 1px solid blue;
+  color: blue;
+  cursor: pointer;
+}
+.main-container {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+.business {
+  display: flex;
+  justify-content: space-evenly;
+}
+.date {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 630px;
+}
+.text {
+  font-size: 26px;
+  font-weight: 900;
+}
+.days {
+  color: gray;
+  font-weight: 900;
+  margin-right: 20px;
+}
+#date {
+  border: none;
+}
+.statistics {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+  height: auto;
+}
+.stat-wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  height: auto;
+  width: 12%;
+  padding: 30px;
+  margin: 30px 60px;
+}
+.fa-briefcase,
+.fa-arrow-pointer,
+.fa-arrows-rotate,
+.fa-dollar-sign {
+  font-size: 50px;
+  color: blue;
+}
+.info {
+}
+.title {
+  font-size: 14px;
+  color: gray;
+}
+.numbers {
+  font-size: 24px;
+  font-weight: 900;
+}
+.probability {
+  color: rgb(23, 203, 23);
+  font-size: 12px;
+  font-weight: 900;
+}
+.charts {
+  display: flex;
+  justify-content: center;
+}
+.ad-cost {
+  width: 34%;
+  height: 300px;
+  border: 1px solid black;
+}
+.performance {
+  width: 34%;
+  height: 300px;
+  border: 1px solid black;
+}
+.cost-wrapper {
+  width: 88%;
+  height: 300px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.performance .text {
+  font-size: 20px;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.desc {
+  font-weight: 900;
+}
+.num {
+  color: gray;
+}
