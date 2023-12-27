@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/28d406b2ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Business Dashboard</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-arrow"><i class="fa-solid fa-arrow-left-long"></i></div>
+      <div class="header-container">
+        <div class="reports">Your reports / Business Dashboard</div>
+        <img src="icons/initials.png" alt="" class="initials" />
+        <img
+          src="images/female-avatar-girl-face-woman-user-7.svg"
+          alt=""
+          class="initials2"
+        />
+        <i class="fa-regular fa-comment"></i>
+        <div class="share-btn">Share</div>
+        <div class="preview-btn">Preview</div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="business">
+        <div class="text">Business Dashboard</div>
+        <div class="date">
+          <div class="days">Last 30 days</div>
+          <div class="calendar">
+            <input type="date" name="date" id="date" />
+          </div>
+        </div>
+      </div>
+      <!-- Statistics -->
+      <div class="statistics">
+        <div class="stat-wrapper">
+          <i class="fa-solid fa-briefcase"></i>
+          <div class="info">
+            <div class="title">Sales</div>
+            <div class="numbers">10,424</div>
+            <div class="probability">+1.34%</div>
+          </div>
+        </div>
+
+        <div class="stat-wrapper">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <div class="info">
+            <div class="title">Revenue</div>
+            <div class="numbers">US$ 10,500</div>
+            <div class="probability">+2.29%</div>
+          </div>
+        </div>
+
+        <div class="stat-wrapper">
+          <i class="fa-solid fa-arrows-rotate"></i>
+          <div class="info">
+            <div class="title">Conversion rate</div>
+            <div class="numbers">9.93%</div>
+            <div class="probability">+1.95%</div>
+          </div>
+        </div>
+
+        <div class="stat-wrapper">
+          <i class="fa-solid fa-arrow-pointer"></i>
+          <div class="info">
+            <div class="title">Clicks per Day</div>
+            <div class="numbers">6,942</div>
+            <div class="probability">+0.32%</div>
+          </div>
+        </div>
+      </div>
+      <!-- Charts -->
+      <div class="bar-charts">
+        <div class="left-bar">
+          <div>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+        <div class="right-bar"></div>
+      </div>
+     <div class="charts-line">
+<div class="left-section"></div>
+        <!-- Table -->
+        <div class="right-section">
+          <div class="desc campaign">Campaigns</div>
+
+          <div class="table">
+            <table>
+              <tr>
+                <th>Campaign</th>
+                <th>Impressions</th>
+                <th>Clicks</th>
+                <th>CTR</th>
+              </tr>
+
+              <tr>
+                <td>Campaign 1</td>
+                <td>13,539</td>
+                <td>19,756</td>
+                <td>12,93%</td>
+              </tr>
+              <tr>
+                <td>Campaign 2</td>
+                <td>10,539</td>
+                <td>14,756</td>
+                <td>
+                  9.3%
+                  <tr>
+                    <td>Campaign 3</td>
+                    <td>6,358</td>
+                    <td>10,358</td>
+                    <td>6.39%</td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
