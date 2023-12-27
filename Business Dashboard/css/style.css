@@ -291,15 +291,16 @@
 .link-clicks {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 74%;
   height: 300px;
   padding: 10px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 .left-section {
-  width: 40%;
-  border: 1px solid black;
+  width: 50%;
+  /* border: 1px solid black; */
   height: auto;
 }
 .links {
@@ -308,9 +309,44 @@
   width: 40%;
   margin-top: 10px;
 }
-
+.slope {
+  width: 90%;
+  height: 220px;
+  margin: 10px;
+}
 .right-section {
   width: 50%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: auto;
+}
+.campaign {
+  margin-left: 38px;
+  font-size: 20px;
+}
+.table {
+  width: 100%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+td,
+th {
+  /* border: 1px solid dddddd; */
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+}
+th {
+  border-bottom: 1px solid rgb(14, 14, 255);
+  color: black;
+}
+td {
+  height: 60px;
 }
