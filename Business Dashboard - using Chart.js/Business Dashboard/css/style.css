@@ -197,6 +197,14 @@ body {
   height: auto;
   border: 1px solid black;
 }
+.line-chart {
+  width: 100%;
+  height: auto;
+}
+#myLineChart {
+  width: 50%;
+  height: 300px;
+}
 .campaign {
   margin-left: 24px;
   font-size: 20px;
