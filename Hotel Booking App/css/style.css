@@ -148,10 +148,16 @@ body {
   }
   #login,
   #signup {
-    width: ;
+  }
+  .rooms {
+    width: 100%;
   }
   .rooms input {
     display: block;
+  }
+  .rooms label {
+    display: block;
+    padding: 10px;
   }
   .logo {
     margin-right: 0;
@@ -168,15 +174,30 @@ body {
   .second-form {
     display: block;
     width: 100%;
+    text-align: center;
   }
   .second-form #check-in,
   #check-out,
   #guests {
     width: 100%;
-    margin-top: 18px;
+  }
+  .second-form label {
+    display: block;
+  }
+  .fa-magnifying-glass {
+    display: block;
+    margin-bottom: 20px;
+    text-align: right;
   }
   .second-form #search {
     display: none;
+  }
+  .second-form #guests {
+    width: 100%;
+    margin-left: 10px;
+  }
+  #guests-label {
+    margin-top: 14px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
