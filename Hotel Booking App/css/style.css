@@ -23,18 +23,22 @@ body {
   position: absolute;
   bottom: 10%;
   left: 30%;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 .cover-text {
   width: 100%;
   height: inherit;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 .btn {
   display: flex;
   justify-content: right;
   margin: 10px;
+}
+.logo {
+  width: 120px;
+  margin-right: 1460px;
 }
 #login,
 #signup {
@@ -60,13 +64,11 @@ body {
   font-size: 40px;
   z-index: 1;
 }
-.desc {
-  padding: 20px;
-  font-size: 30px;
-  color: rgb(6, 105, 95);
-}
+
 .desc-two {
   color: white;
-  font-size: 20px;
-  font-weight: 900;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: italic;
+  padding: 10px;
 }
