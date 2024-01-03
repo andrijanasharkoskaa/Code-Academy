@@ -139,6 +139,10 @@ body {
   border: none;
   margin-top: 10px;
 }
+.recommendations {
+  display: flex;
+  justify-content: space-between;
+}
 @media only screen and (max-width: 600px) {
   form input {
     display: block;
