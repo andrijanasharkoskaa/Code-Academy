@@ -151,6 +151,7 @@ body {
   width: 12%;
   height: auto;
   margin-right: 20px;
+  margin-top: 16px;
   /* border: 1px solid black; */
 }
 .car-rental {
@@ -165,8 +166,23 @@ body {
   height: auto;
   border: 2px solid turquoise;
   border-radius: 14px;
-  margin-top: 14px;
+  margin-top: 24px;
   text-align: center;
+}
+.discount {
+  width: 100%;
+  height: auto;
+  border: 4px solid white;
+  background-color: turquoise;
+  color: white;
+  font-weight: 800;
+  font-size: 26px;
+  border-radius: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+.tours {
+  margin-top: 10px;
 }
 .title {
   font-size: 20px;
@@ -210,6 +226,11 @@ body {
   border: 1px solid turquoise;
   border-radius: 14px;
   padding: 16px;
+  margin-top: 16px;
+}
+.text a {
+  text-decoration: none;
+  color: gray;
 }
 .gallery {
   width: 80%;
@@ -275,6 +296,7 @@ body {
   width: 12%;
   height: auto;
   margin-left: 20px;
+  margin-top: 16px;
   /* border: 1px solid green; */
 }
 @media only screen and (max-width: 600px) {
