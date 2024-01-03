@@ -145,39 +145,108 @@ body {
   width: 100%;
   height: auto;
   padding: 20px;
+  margin-top: 40px;
 }
 .left-side {
-  width: 30%;
+  width: 12%;
   height: auto;
+  margin-right: 20px;
+  /* border: 1px solid black; */
 }
 .car-rental {
-  width: 40%;
-  height: 140px;
+  width: 100%;
+  height: auto;
   border: 2px solid turquoise;
   border-radius: 14px;
-  text-align: left;
+  text-align: center;
 }
 .ski-instructors {
+  width: 100%;
+  height: auto;
+  border: 2px solid turquoise;
+  border-radius: 14px;
+  margin-top: 14px;
+  text-align: center;
 }
 .title {
   font-size: 20px;
   font-weight: 700;
   color: rgb(26, 125, 115);
-  padding: 10px;
+  padding: 14px;
+  margin: 10px 0;
 }
 .desc {
   padding: 10px;
   color: gray;
 }
+.desc-sub {
+  color: gray;
+  font-size: 22px;
+  text-wrap: wrap;
+  padding: 10px;
+  margin: 30px 0;
+  width: 80%;
+  margin: 0 auto;
+}
 .btn-view {
   width: 100px;
   height: 20px;
-  margin: 10px;
+  margin: 40px 0 10px 0;
+  background-color: rgb(208, 251, 247);
+  border: 2px solid turquoise;
+  color: gray;
 }
 
 .middle {
+  width: 50%;
+  height: auto;
+  /* border: 1px solid blue; */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid turquoise;
+  border-radius: 14px;
+  padding: 16px;
+}
+.gallery {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid turquoise;
+  border-radius: 14px;
+  padding: 2px;
+}
+.gallery img {
+  width: 50%;
+  height: auto;
+  padding: 1px;
+  border-radius: 14px;
+}
+.text {
+  width: 60%;
+  height: auto;
+}
+.stars {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.fa-star {
+  color: yellow;
+}
+.review-no {
+  margin-left: 10px;
 }
 .right-side {
+  width: 12%;
+  height: auto;
+  margin-left: 20px;
+  /* border: 1px solid green; */
 }
 @media only screen and (max-width: 600px) {
   form input {
