@@ -198,7 +198,7 @@ body {
 }
 
 .middle {
-  width: 50%;
+  width: 40%;
   height: auto;
   /* border: 1px solid blue; */
 }
@@ -212,12 +212,12 @@ body {
   padding: 16px;
 }
 .gallery {
-  width: 50%;
+  width: 80%;
   height: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid turquoise;
+  /* border: 1px solid turquoise; */
   border-radius: 14px;
   padding: 2px;
 }
@@ -231,16 +231,45 @@ body {
   width: 60%;
   height: auto;
 }
+.hotel-name {
+  font-size: 34px;
+  font-weight: 700;
+  padding: 10px;
+  color: gray;
+}
 .stars {
   display: flex;
   justify-content: flex-start;
   padding: 10px;
+  margin: 14px 0;
 }
 .fa-star {
-  color: yellow;
+  color: rgb(240, 240, 28);
 }
 .review-no {
   margin-left: 10px;
+}
+.location {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px 0;
+}
+.location-name {
+  margin-left: 10px;
+  color: gray;
+}
+.fa-location-dot {
+  color: gray;
+  margin-left: 14px;
+}
+.price {
+  margin: 30px 16px;
+  font-weight: 700;
+}
+.food {
+  color: rgb(13, 220, 13);
+  font-weight: 800;
+  margin: 20px 16px;
 }
 .right-side {
   width: 12%;
