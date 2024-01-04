@@ -299,6 +299,19 @@ body {
   margin-top: 16px;
   /* border: 1px solid green; */
 }
+
+/* Hotel Single Listing CSS */
+.search-section {
+  text-align: center;
+}
+.search-section input {
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid turquoise;
+  outline: none;
+}
+/* Media Queries */
 @media only screen and (max-width: 600px) {
   form input {
     display: block;
