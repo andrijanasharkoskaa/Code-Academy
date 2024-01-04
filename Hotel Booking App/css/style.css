@@ -304,6 +304,17 @@ body {
 .search-section {
   text-align: center;
 }
+.back {
+  width: 10%;
+  height: auto;
+  padding: 10px;
+}
+.fa-arrow-left-long {
+  text-align: center;
+  font-size: 24px;
+  color: turquoise;
+  margin-left: 440px;
+}
 .single-listing {
   display: flex;
   justify-content: center;
@@ -375,6 +386,10 @@ body {
 }
 
 .day:hover {
+  background-color: turquoise;
+  color: white;
+}
+.selected {
   background-color: turquoise;
   color: white;
 }
