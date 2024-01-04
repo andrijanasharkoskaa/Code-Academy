@@ -313,8 +313,71 @@ body {
   width: 40%;
   height: auto;
   border-radius: 14px;
-  border: 2px solid turquoise;
+  /* border: 2px solid turquoise; */
   margin-top: 16px;
+}
+.images {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  border: 2px solid turquoise;
+  border-radius: 14px;
+}
+.images img {
+  width: 24%;
+  height: auto;
+  border-radius: 14px;
+  margin: 4px;
+}
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Calendar */
+.calendar {
+  width: 350px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* overflow: hidden; */
+}
+
+.month {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 4px;
+  font-size: 14px;
+}
+.select {
+  text-align: center;
+  background-color: turquoise;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 800;
+}
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  background-color: #fff;
+}
+
+.day {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.day:hover {
+  background-color: turquoise;
+  color: white;
+}
+.calendar a {
+  text-decoration: none;
 }
 .search-section input {
   width: 300px;
