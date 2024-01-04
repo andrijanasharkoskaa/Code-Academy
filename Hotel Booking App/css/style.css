@@ -304,12 +304,30 @@ body {
 .search-section {
   text-align: center;
 }
+.single-listing {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.left-listing {
+  width: 40%;
+  height: auto;
+  border-radius: 14px;
+  border: 2px solid turquoise;
+  margin-top: 16px;
+}
 .search-section input {
   width: 300px;
   height: 30px;
   padding: 10px;
   border: 1px solid turquoise;
   outline: none;
+}
+.right-listing {
+  width: 12%;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 16px;
 }
 /* Media Queries */
 @media only screen and (max-width: 600px) {
