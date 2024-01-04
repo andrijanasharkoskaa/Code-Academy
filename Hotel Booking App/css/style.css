@@ -340,23 +340,25 @@ body {
   width: 350px;
   margin: 20px auto;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 12px;
   /* overflow: hidden; */
 }
 
 .month {
-  background-color: #f2f2f2;
   text-align: center;
   padding: 4px;
   font-size: 14px;
+  border-radius: 12px;
 }
 .select {
   text-align: center;
   background-color: turquoise;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px;
   font-weight: 800;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
 }
 .days {
   display: grid;
@@ -376,8 +378,22 @@ body {
   background-color: turquoise;
   color: white;
 }
+.week {
+  border: none;
+  color: turquoise;
+}
 .calendar a {
   text-decoration: none;
+}
+.proceed {
+  text-align: center;
+  background-color: turquoise;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 800;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 .search-section input {
   width: 300px;
@@ -385,6 +401,41 @@ body {
   padding: 10px;
   border: 1px solid turquoise;
   outline: none;
+}
+.user-reviews {
+}
+.avatar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.fa-user {
+  color: turquoise;
+  font-size: 20px;
+  margin-right: 14px;
+}
+.name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.star-reviews {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.rating {
+  font-size: 18px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.textarea {
+  width: 100%;
+  border: 2px solid turquoise;
+  border-radius: 12px;
+  height: auto;
+  padding: 14px;
+  color: gray;
+  margin-bottom: 40px;
 }
 .right-listing {
   width: 12%;
