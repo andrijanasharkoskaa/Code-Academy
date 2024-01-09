@@ -10,3 +10,18 @@ days.forEach((day) => {
     day.classList.add("selected");
   });
 });
+
+function validateForm() {
+  var cardNumber = document.getElementById("cardNumber").value.trim();
+
+  document.getElementById("cardNumberError").innerHTML = "";
+
+  if (cardNumber === "" || cardNumber.length < 16) {
+    document.getElementById("cardNumberError").innerHTML =
+      "Credit card number not valid";
+  } else {
+    alert("Form submitted successfully!");
+
+    document.getElementById("paymentForm").submit();
+  }
+}
