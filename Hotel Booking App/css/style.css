@@ -519,6 +519,24 @@ body {
   text-decoration: none;
   color: white;
 }
+.checkout-info {
+  margin-left: 20px;
+}
+.duration,
+.date-selected {
+  color: gray;
+  font-weight: 900;
+}
+.payment-form {
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 20px;
+  color: rgb(78, 74, 74);
+  padding: 10px;
+}
+.payment-form input {
+  margin-top: 10px;
+}
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   form input {
