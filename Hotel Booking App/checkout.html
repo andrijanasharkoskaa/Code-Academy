@@ -64,23 +64,28 @@
           <p>
             Please provide payment information to continue with your booking
           </p>
-          <form id="paymentForm" action="">
+          <form id="paymentForm" action="success.html">
+            <div class="cards">
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-cc-mastercard"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+              <i class="fa-brands fa-cc-apple-pay"></i>
+            </div>
             <label for="name">First Name</label>
-            <input type="text" name="name" id="firstName" />
+            <input type="text" name="name" id="firstName" /><br />
 
             <label for="cardNumber">Card Number</label>
-            <input type="text" name="cardNumber" id="cardNumber" />
-
-            <div id="cardNumberError" class="error-message"></div>
+            <input type="text" name="cardNumber" id="cardNumber" /><br />
 
             <label for="expDate">Exp Date</label>
-            <input type="date" name="expDate" id="expDate" />
+            <input type="date" name="expDate" id="expDate" /><br />
 
             <label for="cvc">CVC</label>
-            <input type="text" name="cvc" id="cvc" />
+            <input type="text" name="cvc" id="cvc" /><br />
 
             <input type="button" value="Pay Now" onclick="validateForm()" />
           </form>
+          <div id="cardNumberError" class="error-message"></div>
         </div>
       </div>
 

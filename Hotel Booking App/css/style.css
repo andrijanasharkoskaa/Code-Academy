@@ -536,9 +536,45 @@ body {
 }
 .payment-form input {
   margin-top: 10px;
+  display: block;
+  padding: 4px;
+  width: 40%;
+  outline: 1px rgb(239, 236, 236);
+}
+.payment-form label {
+  font-size: 16px;
+}
+.payment-form p {
+  margin: 20px 0;
+}
+label {
+  margin: 10px 0;
+}
+.cards {
+  display: block;
+  margin-bottom: 30px;
+}
+.cards .fa-brands {
+  font-size: 50px;
+}
+.fa-cc-visa {
+  color: purple;
+}
+.fa-cc-mastercard {
+  color: rgb(168, 168, 42);
+}
+.fa-cc-paypal {
+  color: blue;
+}
+.payment-form input[type="button"] {
+  color: white;
+  background-color: turquoise;
+  border: none;
+  font-weight: 900;
 }
 .error-message {
   color: red;
+  margin-top: 10px;
 }
 /* Media Queries */
 @media only screen and (max-width: 600px) {
