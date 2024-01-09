@@ -19,9 +19,10 @@ function validateForm() {
   if (cardNumber === "" || cardNumber.length < 16) {
     document.getElementById("cardNumberError").innerHTML =
       "Credit card number not valid";
+    setTimeout(() => {
+      window.location.href = "payment-failure.html";
+    }, 1000);
   } else {
-    alert("Form submitted successfully!");
-
     document.getElementById("paymentForm").submit();
   }
 }
