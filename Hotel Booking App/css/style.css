@@ -458,6 +458,54 @@ body {
   margin-left: 20px;
   margin-top: 16px;
 }
+
+.form form {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+.form form input,
+.form form label,
+.form form select {
+  margin: 10px 0;
+}
+.form form input[type="text"],
+.form form select {
+  width: 40%;
+}
+.form h4 {
+  color: rgb(48, 170, 158);
+  font-weight: 900;
+}
+.form input {
+  outline: none;
+  border: 1px solid rgb(169, 228, 225);
+  color: gray;
+  padding: 4px;
+}
+.form select {
+  color: gray;
+  border: 1px solid rgb(212, 208, 208);
+}
+.form label {
+  color: rgb(90, 86, 86);
+  margin-top: 10px;
+}
+.reason {
+  color: rgb(34, 129, 119);
+  margin-top: 6px;
+}
+.proceed-book {
+  padding: 4px;
+  color: white;
+  background-color: turquoise;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 10px;
+}
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   form input {
