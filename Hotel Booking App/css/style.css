@@ -341,11 +341,20 @@ body {
   border-radius: 14px;
   margin: 4px;
 }
+.checkout img {
+  width: 50%;
+}
+.stars-checkout {
+  width: 100%;
+}
+
 .description {
   display: flex;
   justify-content: space-between;
 }
-
+.border-none {
+  border: none;
+}
 /* Calendar */
 .calendar {
   width: 350px;
@@ -505,6 +514,10 @@ body {
   font-size: 16px;
   font-weight: 900;
   margin-top: 10px;
+}
+.proceed-book a {
+  text-decoration: none;
+  color: white;
 }
 /* Media Queries */
 @media only screen and (max-width: 600px) {
