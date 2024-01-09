@@ -64,16 +64,21 @@
           <p>
             Please provide payment information to continue with your booking
           </p>
-          <form action="paymentForm">
-            <label for="name" id="firstName">First Name</label>
-            <input type="text" name="name" id="" />
-            <label for="name">Card Number</label>
-            <input type="number" name="cardNumber" id="cardNumber" />
+          <form id="paymentForm" action="">
+            <label for="name">First Name</label>
+            <input type="text" name="name" id="firstName" />
+
+            <label for="cardNumber">Card Number</label>
+            <input type="text" name="cardNumber" id="cardNumber" />
+
             <div id="cardNumberError" class="error-message"></div>
-            <label for="name">Exp Date</label>
+
+            <label for="expDate">Exp Date</label>
             <input type="date" name="expDate" id="expDate" />
-            <label for="name">CVC</label>
-            <input type="number" name="cvc" id="cvc" />
+
+            <label for="cvc">CVC</label>
+            <input type="text" name="cvc" id="cvc" />
+
             <input type="button" value="Pay Now" onclick="validateForm()" />
           </form>
         </div>
@@ -92,5 +97,7 @@
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
