@@ -3,9 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/28d406b2ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Success Page</title>
   </head>
   <body>
-    <h1>Success!</h1>
+    <div class="btn">
+      <img src="images/logo.png" alt="logo" class="logo" />
+      <input type="submit" value="Login" id="login" />
+      <input type="submit" value="Sign up" id="signup" />
+    </div>
+
+    <div class="single-listing">
+      <div class="left-listing">
+        <h2>Your booking was successful!</h2>
+        <div class="images checkout border-none">
+          <img
+            src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg"
+            alt=""
+            class="img-checkout"
+          />
+          <div class="description">
+            <div class="text stars-checkout">
+              <div class="hotel-name">
+                <a href="hotel.html">Hotel Name 1</a>
+              </div>
+              <div class="stars">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review-no">4.5 (123 reviews)</div>
+              </div>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="location-name">Mali, Maldives</div>
+              </div>
+              <div class="price">$300 / night</div>
+              <div class="food">Breakfast included</div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-info">
+          <div class="duration">Hotel Address: Some Addres, 123, Country</div>
+          <div class="date-selected">Phone:123456789</div>
+          <div class="contact">
+            <p>Contact the Hotel Host:</p>
+            <textarea
+              name=""
+              id="host"
+              placeholder="Leave your message here..."
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
