@@ -21,7 +21,7 @@ function validateForm() {
       "Credit card number not valid";
     setTimeout(() => {
       window.location.href = "payment-failure.html";
-    }, 1000);
+    }, 2000);
   } else {
     document.getElementById("paymentForm").submit();
   }

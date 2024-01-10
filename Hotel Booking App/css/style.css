@@ -589,6 +589,18 @@ label {
 .left-listing h2 {
   margin-left: 20px;
   margin-bottom: 20px;
+  color: green;
+}
+.sad {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  color: red;
+}
+.fa-face-frown-open {
+  font-size: 60px;
+  margin-top: 20px;
 }
 /* Media Queries */
 @media only screen and (max-width: 600px) {
