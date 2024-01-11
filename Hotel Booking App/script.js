@@ -40,9 +40,13 @@ function login() {
   var loginEmail = document.getElementById("loginEmail").value;
   var loginPassword = document.getElementById("loginPassword").value;
 
-  // Add your login logic here
-  alert("Login logic goes here.");
+  var savedEmail = "andrijana.sh@gmail.com";
+  var savedPassword = "password123";
 
-  // Close the popup after successful login or perform other actions
-  closeLoginPopup();
+  if (loginEmail === savedEmail && loginPassword === savedPassword) {
+    window.location.href = "profile.html";
+    closePopups();
+  } else {
+    alert("Invalid email or password. Please try again.");
+  }
 }
