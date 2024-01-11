@@ -612,10 +612,39 @@ label {
   background: white;
   box-shadow: 0 0 10px turquoise;
   z-index: 1;
+  width: 50%;
+  text-align: center;
 }
 
 #blur-bg {
   filter: blur(3px);
+}
+#loginPopup label {
+  font-size: 28px;
+  width: 30%;
+}
+#loginPopup input[type="email"],
+#loginPopup input[type="password"] {
+  width: 60%;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid turquoise;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+#loginPopup h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 40px;
+  color: turquoise;
+}
+#loginForm {
+  display: block;
+}
+#loginPassword {
+}
+#loginEmail {
 }
 /* Media Queries */
 @media only screen and (max-width: 600px) {
