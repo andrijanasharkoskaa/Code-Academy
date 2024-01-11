@@ -34,15 +34,15 @@ function showLoginPopup() {
 
 function closeLoginPopup() {
   document.getElementById("loginPopup").style.display = "none";
-  document.body.classList.remove("blur-background");
 }
 
 function login() {
   var loginEmail = document.getElementById("loginEmail").value;
   var loginPassword = document.getElementById("loginPassword").value;
 
+  // Add your login logic here
   alert("Login logic goes here.");
 
-  s;
+  // Close the popup after successful login or perform other actions
   closeLoginPopup();
 }

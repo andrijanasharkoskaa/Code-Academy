@@ -608,13 +608,14 @@ label {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
+  padding: 140px;
   background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px turquoise;
   z-index: 1;
 }
-.blur-background {
-  filter: blur(5px); /* Adjust the blur effect as needed */
+
+#blur-bg {
+  filter: blur(3px);
 }
 /* Media Queries */
 @media only screen and (max-width: 600px) {
