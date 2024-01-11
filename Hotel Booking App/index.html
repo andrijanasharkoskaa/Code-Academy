@@ -15,7 +15,24 @@
       <a href="index.html"
         ><img src="images/logo.png" alt="logo" class="logo"
       /></a>
-      <input type="submit" value="Login" id="login" />
+      <input
+        type="submit"
+        value="Login"
+        id="login"
+        onclick="showLoginPopup()"
+      />
+
+      <div id="loginPopup">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" required /><br />
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" required /><br />
+          <button type="button" onclick="login()">Login</button>
+          <button type="button" onclick="closeLoginPopup()">Close</button>
+        </form>
+      </div>
       <input type="submit" value="Sign up" id="signup" />
     </div>
     <div class="cover-bg">
@@ -236,5 +253,7 @@
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
