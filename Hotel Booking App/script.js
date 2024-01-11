@@ -26,3 +26,10 @@ function validateForm() {
     document.getElementById("paymentForm").submit();
   }
 }
+
+const login = document.getElementsById("login");
+const signup = document.getElementById("signup");
+
+login.addEventListener("click", () => {
+  login.style.backgroundColor = "black";
+});
