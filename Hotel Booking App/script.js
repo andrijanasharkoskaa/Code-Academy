@@ -26,10 +26,23 @@ function validateForm() {
     document.getElementById("paymentForm").submit();
   }
 }
+// Login Button
+function showLoginPopup() {
+  document.getElementById("loginPopup").style.display = "block";
+  document.body.classList.add("blur-background");
+}
 
-const login = document.getElementsById("login");
-const signup = document.getElementById("signup");
+function closeLoginPopup() {
+  document.getElementById("loginPopup").style.display = "none";
+  document.body.classList.remove("blur-background");
+}
 
-login.addEventListener("click", () => {
-  login.style.backgroundColor = "black";
-});
+function login() {
+  var loginEmail = document.getElementById("loginEmail").value;
+  var loginPassword = document.getElementById("loginPassword").value;
+
+  alert("Login logic goes here.");
+
+  s;
+  closeLoginPopup();
+}
