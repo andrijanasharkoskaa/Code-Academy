@@ -6,29 +6,30 @@
     <style>
       body {
         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
         background-image: url("background.jpg"); /* Replace with your background image */
         background-size: cover;
-        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
       }
 
-      #blur-container {
-        position: relative;
-        width: 300px; /* Adjust the width of the form container as needed */
-        z-index: 1;
-      }
-
-      #blur-background {
-        filter: blur(5px); /* Adjust the blur effect as needed */
+      #overlay {
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+        z-index: 1;
+      }
+
+      #container {
+        position: relative;
+        z-index: 2;
       }
 
       .popup {
@@ -40,35 +41,47 @@
         padding: 20px;
         background: white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        z-index: 1000;
+      }
+
+      .blur-background {
+        filter: blur(5px); /* Adjust the blur effect as needed */
       }
     </style>
-    <title>Sign Up and Login</title>
+    <title>Login and Sign Up</title>
   </head>
   <body>
-    <div id="blur-container">
-      <!-- Sign Up Popup -->
-      <div id="signupPopup" class="popup">
-        <h2>Sign Up</h2>
-        <form id="signupForm">
-          <label for="email">Email:</label>
-          <input type="email" id="email" required /><br />
-          <label for="password">Password (at least 5 characters):</label>
-          <input type="password" id="password" minlength="5" required /><br />
-          <button type="button" onclick="signup()">Sign Up</button>
-        </form>
-      </div>
+    <div id="overlay">
+      <div id="container">
+        <!-- Sign Up Popup -->
+        <div id="signupPopup" class="popup">
+          <h2>Sign Up</h2>
+          <form id="signupForm">
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" required /><br />
+            <label for="signupPassword"
+              >Password (at least 5 characters):</label
+            >
+            <input
+              type="password"
+              id="signupPassword"
+              minlength="5"
+              required
+            /><br />
+            <button type="button" onclick="signup()">Sign Up</button>
+          </form>
+        </div>
 
-      <!-- Login Popup -->
-      <div id="loginPopup" class="popup">
-        <h2>Login</h2>
-        <form id="loginForm">
-          <label for="loginEmail">Email:</label>
-          <input type="email" id="loginEmail" required /><br />
-          <label for="loginPassword">Password:</label>
-          <input type="password" id="loginPassword" required /><br />
-          <button type="button" onclick="login()">Login</button>
-        </form>
+        <!-- Login Popup -->
+        <div id="loginPopup" class="popup">
+          <h2>Login</h2>
+          <form id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" required /><br />
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required /><br />
+            <button type="button" onclick="login()">Login</button>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -76,27 +89,28 @@
     <button onclick="showSignupPopup()">Sign Up</button>
     <button onclick="showLoginPopup()">Login</button>
 
-    <div id="blur-background"></div>
-
     <script>
       function showSignupPopup() {
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("container").classList.add("blur-background");
         document.getElementById("signupPopup").style.display = "block";
-        document.getElementById("blur-background").style.display = "block";
       }
 
       function showLoginPopup() {
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("container").classList.add("blur-background");
         document.getElementById("loginPopup").style.display = "block";
-        document.getElementById("blur-background").style.display = "block";
       }
 
       function signup() {
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("password").value;
+        var email = document.getElementById("signupEmail").value;
+        var password = document.getElementById("signupPassword").value;
 
         // Check if email and password meet your criteria
         if (email && password.length >= 5) {
-          // Redirect to success page
-          window.location.href = "success.html";
+          // Redirect to success page or perform other actions
+          alert("Sign up successful!");
+          closePopups();
         } else {
           alert("Invalid email or password. Please try again.");
         }
@@ -111,11 +125,21 @@
         var savedPassword = "password123"; // Replace with your saved password
 
         if (loginEmail === savedEmail && loginPassword === savedPassword) {
-          // Redirect to profile page
-          window.location.href = "profile.html";
+          // Redirect to profile page or perform other actions
+          alert("Login successful!");
+          closePopups();
         } else {
           alert("Invalid email or password. Please try again.");
         }
+      }
+
+      function closePopups() {
+        document.getElementById("overlay").style.display = "none";
+        document
+          .getElementById("container")
+          .classList.remove("blur-background");
+        document.getElementById("signupPopup").style.display = "none";
+        document.getElementById("loginPopup").style.display = "none";
       }
     </script>
   </body>
