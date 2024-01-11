@@ -608,7 +608,7 @@ label {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 140px;
+  padding: 100px;
   background: white;
   box-shadow: 0 0 10px turquoise;
   z-index: 1;
@@ -622,7 +622,9 @@ label {
 #loginPopup label {
   font-size: 28px;
   width: 30%;
+  color: turquoise;
 }
+
 #loginPopup input[type="email"],
 #loginPopup input[type="password"] {
   width: 60%;
@@ -634,17 +636,28 @@ label {
 }
 
 #loginPopup h2 {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
-  padding: 40px;
+  padding: 60px;
   color: turquoise;
 }
 #loginForm {
   display: block;
 }
 #loginPassword {
+  color: gray;
 }
 #loginEmail {
+  color: gray;
+}
+#loginForm button {
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 800;
+  color: turquoise;
+  border: none;
+  margin: 20px;
+  background-color: rgb(181, 248, 241);
 }
 /* Media Queries */
 @media only screen and (max-width: 600px) {
