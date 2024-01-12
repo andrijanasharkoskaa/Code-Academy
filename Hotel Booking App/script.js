@@ -58,7 +58,7 @@ function showSignupPopup() {
   document.body.classList.add("blur-background");
 }
 
-function closeLoginPopup() {
+function closeSignupPopup() {
   document.getElementById("loginPopup").style.display = "none";
 }
 
