@@ -50,3 +50,29 @@ function login() {
     alert("Invalid email or password. Please try again.");
   }
 }
+
+// Signup
+
+function showSignupPopup() {
+  document.getElementById("loginPopup").style.display = "block";
+  document.body.classList.add("blur-background");
+}
+
+function closeLoginPopup() {
+  document.getElementById("loginPopup").style.display = "none";
+}
+
+function login() {
+  var loginEmail = document.getElementById("loginEmail").value;
+  var loginPassword = document.getElementById("loginPassword").value;
+
+  var savedEmail = "andrijana.sh@gmail.com";
+  var savedPassword = "password123";
+
+  if (loginEmail === savedEmail && loginPassword === savedPassword) {
+    window.location.href = "profile.html";
+    closePopups();
+  } else {
+    alert("Invalid email or password. Please try again.");
+  }
+}
