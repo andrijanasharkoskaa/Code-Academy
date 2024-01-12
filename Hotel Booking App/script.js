@@ -54,17 +54,17 @@ function login() {
 // Signup
 
 function showSignupPopup() {
-  document.getElementById("loginPopup").style.display = "block";
+  document.getElementById("signupPopup").style.display = "block";
   document.body.classList.add("blur-background");
 }
 
 function closeSignupPopup() {
-  document.getElementById("loginPopup").style.display = "none";
+  document.getElementById("signupPopup").style.display = "none";
 }
 
-function login() {
-  var loginEmail = document.getElementById("loginEmail").value;
-  var loginPassword = document.getElementById("loginPassword").value;
+function signup() {
+  var signupEmail = document.getElementById("signupEmail").value;
+  var signupPassword = document.getElementById("signupPassword").value;
 
   var savedEmail = "andrijana.sh@gmail.com";
   var savedPassword = "password123";
