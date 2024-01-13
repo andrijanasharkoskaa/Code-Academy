@@ -28,11 +28,13 @@ function validateForm() {
 }
 // Login Button
 function showLoginPopup() {
+  addBlurEffect();
   document.getElementById("loginPopup").style.display = "block";
   document.body.classList.add("blur-background");
 }
 
 function closeLoginPopup() {
+  removeBlurEffect();
   document.getElementById("loginPopup").style.display = "none";
 }
 
@@ -60,6 +62,7 @@ function showSignupPopup() {
 }
 
 function closeSignupPopup() {
+  removeBlurEffect();
   document.getElementById("signupPopup").style.display = "none";
 }
 
@@ -84,6 +87,5 @@ function addBlurEffect() {
 }
 
 function removeBlurEffect() {
-  document.body.classList.remove("blur-bg");
   document.querySelector(".add-blur").classList.remove("blur-bg");
 }

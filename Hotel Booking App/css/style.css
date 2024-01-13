@@ -6,7 +6,7 @@
 body {
 }
 .blur-bg {
-  filter: blur(2px);
+  filter: blur(9px);
 }
 .add-blur.blur-bg {
   filter: blur(2px);
