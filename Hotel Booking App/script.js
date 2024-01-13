@@ -55,7 +55,6 @@ function login() {
 
 function showSignupPopup() {
   document.getElementById("signupPopup").style.display = "block";
-  document.body.classList.add("blur-background");
 }
 
 function closeSignupPopup() {
@@ -66,13 +65,10 @@ function signup() {
   var signupEmail = document.getElementById("signupEmail").value;
   var signupPassword = document.getElementById("signupPassword").value;
 
-  var savedEmail = "andrijana.sh@gmail.com";
-  var savedPassword = "password123";
+  // Add your sign-up logic here
+  alert("Sign up logic goes here.");
 
-  if (signupEmail === savedEmail && signupPassword === savedPassword) {
-    window.location.href = "profile.html";
-    closePopups();
-  } else {
-    alert("Invalid email or password. Please try again.");
-  }
+  // Redirect to profile page after successful sign-up
+  window.location.href = "profile.html";
+  closeSignupPopup();
 }
