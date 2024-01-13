@@ -678,17 +678,15 @@ label {
 }
 .profile-info {
   width: 30%;
-  height: 800px;
+  height: 910px;
   background-image: linear-gradient(
     to right,
     rgb(26, 240, 219),
     rgb(17, 136, 124)
   );
+  overflow-y: hidden;
 }
-.profile-stats {
-  width: 60%;
-  height: max-content;
-}
+
 .avatar-img {
   text-align: center;
   padding: 80px;
@@ -708,6 +706,58 @@ label {
   font-size: 24px;
   color: white;
   margin-top: 40px;
+  padding: 30px;
+}
+.go-back {
+  text-align: center;
+}
+.fa-arrow-left {
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+}
+.profile-stats {
+  width: 60%;
+  height: max-content;
+}
+.info {
+  font-size: 30px;
+  padding: 140px 120px 20px 120px;
+  color: rgb(49, 170, 158);
+  font-weight: 900;
+}
+.line {
+  width: 80%;
+  background-color: turquoise;
+  height: 4px;
+  margin-left: 120px;
+}
+.personal-info {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 120px;
+}
+
+.email-info {
+  margin-right: 200px;
+  font-size: 20px;
+  color: rgb(38, 168, 155);
+  font-weight: 800;
+  margin-top: 40px;
+}
+.email-info div:nth-child(2) {
+  padding-top: 20px;
+  color: rgb(60, 212, 197);
+}
+.phone-info {
+  color: rgb(38, 168, 155);
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 40px;
+}
+.phone-info div:nth-child(2) {
+  padding-top: 20px;
+  color: rgb(60, 212, 197);
 }
 /* Media Queries */
 @media only screen and (max-width: 600px) {
