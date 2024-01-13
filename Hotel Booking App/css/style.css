@@ -659,6 +659,18 @@ label {
   margin: 20px;
   background-color: rgb(181, 248, 241);
 }
+/* Signup Form */
+#signupPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   form input {
