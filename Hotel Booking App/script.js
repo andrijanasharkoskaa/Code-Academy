@@ -54,6 +54,8 @@ function login() {
 // Signup
 
 function showSignupPopup() {
+  addBlurEffect();
+
   document.getElementById("signupPopup").style.display = "block";
 }
 
@@ -75,7 +77,13 @@ function signup() {
     alert("Invalid email or password. Please try again.");
   }
 }
-// alert("Sign Up Successful!");
 
-// window.location.href = "profile.html";
-// closeSignupPopup();
+// Experimenting
+function addBlurEffect() {
+  document.querySelector(".add-blur").classList.add("blur-bg");
+}
+
+function removeBlurEffect() {
+  document.body.classList.remove("blur-bg");
+  document.querySelector(".add-blur").classList.remove("blur-bg");
+}
