@@ -759,6 +759,30 @@ label {
   padding-top: 20px;
   color: rgb(60, 212, 197);
 }
+.hotel-img {
+  width: 100%;
+  height: auto;
+}
+.smaller-img {
+  width: 30%;
+  height: 160px;
+  border-radius: 20px;
+  margin-left: 80px;
+}
+.desc {
+  width: 100%;
+  text-align: left;
+}
+.bookings {
+  display: block;
+  padding: 40px;
+}
+.hotel-name a {
+  color: turquoise;
+  font-size: 28px;
+  text-decoration: none;
+  margin-left: 70px;
+}
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   form input {
