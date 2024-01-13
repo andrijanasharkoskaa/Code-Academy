@@ -26,6 +26,14 @@ function validateForm() {
     document.getElementById("paymentForm").submit();
   }
 }
+// Experimenting
+function addBlurEffect() {
+  document.querySelector(".add-blur").classList.add("blur-bg");
+}
+
+function removeBlurEffect() {
+  document.querySelector(".add-blur").classList.remove("blur-bg");
+}
 // Login Button
 function showLoginPopup() {
   addBlurEffect();
@@ -79,13 +87,4 @@ function signup() {
   } else {
     alert("Invalid email or password. Please try again.");
   }
-}
-
-// Experimenting
-function addBlurEffect() {
-  document.querySelector(".add-blur").classList.add("blur-bg");
-}
-
-function removeBlurEffect() {
-  document.querySelector(".add-blur").classList.remove("blur-bg");
 }
