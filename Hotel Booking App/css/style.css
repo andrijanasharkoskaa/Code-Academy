@@ -675,6 +675,7 @@ label {
 .profile {
   display: flex;
   justify-content: flex-start;
+  overflow: hidden;
 }
 .profile-info {
   width: 30%;
@@ -718,11 +719,12 @@ label {
 }
 .profile-stats {
   width: 60%;
-  height: max-content;
+  height: auto;
+  overflow: hidden;
 }
 .info {
   font-size: 30px;
-  padding: 140px 120px 20px 120px;
+  padding: 70px 120px 20px 120px;
   color: rgb(49, 170, 158);
   font-weight: 900;
 }
@@ -779,9 +781,16 @@ label {
 }
 .hotel-name a {
   color: turquoise;
-  font-size: 28px;
+  font-size: 20px;
   text-decoration: none;
   margin-left: 70px;
+}
+.size {
+  font-size: 16px;
+}
+.hotel-desc {
+  margin-left: 60px;
+  padding: 0;
 }
 /* Media Queries */
 @media only screen and (max-width: 600px) {
