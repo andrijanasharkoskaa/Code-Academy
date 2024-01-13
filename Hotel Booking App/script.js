@@ -69,7 +69,7 @@ function signup() {
   var savedEmail = "andrijana.sh@gmail.com";
   var savedPassword = "password123";
 
-  if (loginEmail === savedEmail && loginPassword === savedPassword) {
+  if (signupEmail === savedEmail && signupPassword === savedPassword) {
     window.location.href = "profile.html";
     closePopups();
   } else {
