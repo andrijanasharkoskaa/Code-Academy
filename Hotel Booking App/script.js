@@ -65,8 +65,17 @@ function signup() {
   var signupEmail = document.getElementById("signupEmail").value;
   var signupPassword = document.getElementById("signupPassword").value;
 
-  alert("Sign Up Successful!");
+  var savedEmail = "andrijana.sh@gmail.com";
+  var savedPassword = "password123";
 
-  window.location.href = "profile.html";
-  closeSignupPopup();
+  if (signupEmail === savedEmail && signupPassword === savedPassword) {
+    window.location.href = "profile.html";
+    closePopups();
+  } else {
+    alert("Invalid email or password. Please try again.");
+  }
 }
+// alert("Sign Up Successful!");
+
+// window.location.href = "profile.html";
+// closeSignupPopup();
