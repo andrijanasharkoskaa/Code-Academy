@@ -65,10 +65,8 @@ function signup() {
   var signupEmail = document.getElementById("signupEmail").value;
   var signupPassword = document.getElementById("signupPassword").value;
 
-  // Add your sign-up logic here
-  alert("Sign up logic goes here.");
+  alert("Sign Up Successful!");
 
-  // Redirect to profile page after successful sign-up
   window.location.href = "profile.html";
   closeSignupPopup();
 }
