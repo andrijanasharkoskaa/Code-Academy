@@ -670,8 +670,48 @@ label {
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1;
+  width: 50%;
+}
+#signupForm {
+  display: block;
 }
 
+#signupEmail {
+  color: gray;
+}
+#signupPassword {
+  color: gray;
+}
+#signupForm button {
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 800;
+  color: turquoise;
+  border: none;
+  margin: 20px;
+  background-color: rgb(181, 248, 241);
+}
+#signupPopup h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 60px;
+  color: turquoise;
+}
+#signupPopup label {
+  font-size: 28px;
+  width: 30%;
+  color: turquoise;
+}
+
+#signupPopup input[type="email"],
+#signupPopup input[type="password"] {
+  width: 60%;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid turquoise;
+  padding: 8px;
+  margin-top: 10px;
+}
 .profile {
   display: flex;
   justify-content: flex-start;
