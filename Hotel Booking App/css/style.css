@@ -671,6 +671,44 @@ label {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+}
+.profile-info {
+  width: 30%;
+  height: 800px;
+  background-image: linear-gradient(
+    to right,
+    rgb(26, 240, 219),
+    rgb(17, 136, 124)
+  );
+}
+.profile-stats {
+  width: 60%;
+  height: max-content;
+}
+.avatar-img {
+  text-align: center;
+  padding: 80px;
+}
+.avatar-img img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+.avatar-name {
+  font-size: 30px;
+  color: white;
+  margin-top: 40px;
+}
+.avatar-profession {
+  font-size: 24px;
+  color: white;
+  margin-top: 40px;
+}
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   form input {
