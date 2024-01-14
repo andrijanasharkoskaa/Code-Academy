@@ -828,7 +828,7 @@ label {
   color: turquoise;
   font-size: 20px;
   text-decoration: none;
-  margin-left: 70px;
+  /* margin-left: 10px; */
 }
 .size {
   font-size: 16px;
@@ -916,6 +916,8 @@ label {
   }
   .wrapper {
     width: 100%;
+    display: block;
+    /* text-align: center; */
   }
   .gallery {
     display: block;
@@ -923,13 +925,24 @@ label {
     height: auto;
   }
   .gallery img {
-    width: 80%;
+    width: 100%;
+    height: auto;
+  }
+  .text {
+    width: 100%;
+  }
+  .hotel-name a {
+    font-size: 24px;
   }
   .right-side {
     width: 100%;
     display: block;
+    margin-left: 0;
+
+    /* border: 1px solid green; */
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .logo {
     margin-right: 320px;
@@ -939,5 +952,51 @@ label {
     position: absolute;
     bottom: 10%;
     left: 10%;
+  }
+  .recommendations {
+    /* margin-top: 400px; */
+    display: block;
+    width: 100%;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .middle {
+    display: block;
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    /* text-align: center; */
+  }
+  .gallery {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .gallery img {
+    width: 40%;
+    height: auto;
+  }
+  .text {
+    width: 100%;
+  }
+  .hotel-name a {
+    font-size: 24px;
+  }
+  .right-side {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+
+    /* border: 1px solid green; */
+  }
+  #signupPopup {
+    width: 80%;
+  }
+  #loginPopup {
+    width: 80%;
   }
 }
