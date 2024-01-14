@@ -999,4 +999,49 @@ label {
   #loginPopup {
     width: 80%;
   }
+  .single-listing {
+    display: flex;
+    width: 100%;
+  }
+  .images {
+    width: 100%;
+    height: auto;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .images img {
+    width: 40%;
+    height: auto;
+  }
+  .description {
+    display: block;
+  }
+  .right-listing {
+    display: block;
+    width: 40%;
+    text-align: center;
+  }
+  .user-reviews {
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 120px;
+  }
+  .textarea {
+    width: 100%;
+    height: auto;
+  }
+  .calendar {
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+  .payment-form {
+    width: 100%;
+  }
+  #paymentForm {
+    width: 100%;
+  }
+  #paymentForm input {
+    width: 100%;
+  }
 }
