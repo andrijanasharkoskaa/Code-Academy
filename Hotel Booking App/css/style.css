@@ -1044,4 +1044,11 @@ label {
   #paymentForm input {
     width: 100%;
   }
+  .checkout {
+    width: 100%;
+  }
+  .img-checkout {
+    width: 50%;
+    height: auto;
+  }
 }
