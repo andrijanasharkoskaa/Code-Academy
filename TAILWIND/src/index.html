@@ -1,12 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
     <title>Tailwind</title>
   </head>
-  <body>
+  <body class="bg-white dark:bg-black">
     <h1 class="text-3xl font-bold text-blue-400 underline">Hello world!</h1>
+
+    <div
+      class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
+    >
+      <div class="shrink-0">
+        <img
+          class="h-12 w-12"
+          src="https://cdn-icons-png.flaticon.com/512/5962/5962463.png"
+          alt="ChitChat Logo"
+        />
+      </div>
+      <div>
+        <div class="text-xl font-medium text-black">ChitChat</div>
+        <p class="text-slate-500">You have a new message!</p>
+      </div>
+    </div>
+
+    <div
+      class="py-8 px-8 max-w-sm mx-auto bg-blue-800 bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
+    >
+      <img
+        class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
+        src="https://t3.ftcdn.net/jpg/06/17/13/26/360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg"
+        alt="Woman's Face"
+      />
+      <div class="text-center space-y-2 sm:text-left">
+        <div class="space-y-0.5">
+          <p class="text-lg text-black font-semibold">Erin Lindford</p>
+          <p class="text-slate-500 font-medium">Product Engineer</p>
+        </div>
+        <button
+          class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+        >
+          Message
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+    >
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img
+            class="h-48 w-full object-cover md:h-full md:w-48"
+            src="https://i.guim.co.uk/img/media/36b204799f4fc18495804f2c21510bb4a4672609/0_142_5576_3344/master/5576.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=1a715f9bd422edf8ecd89e961a125590"
+            alt="Modern building architecture"
+          />
+        </div>
+        <div class="p-8">
+          <div
+            class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
+          >
+            Company retreats
+          </div>
+          <a
+            href="#"
+            class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
+            >Incredible accommodation for your team</a
+          >
+          <p class="mt-2 text-slate-500 text-center sm:text-left">
+            Looking to take your team away on a retreat to enjoy awesome food
+            and take in some sunshine? We have a list of places to do just that.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl"
+    >
+      <div>
+        <span
+          class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg"
+        >
+          <svg
+            class="h-6 w-6 text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <!-- ... -->
+          </svg>
+        </span>
+      </div>
+      <h3
+        class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight"
+      >
+        Writes Upside-Down
+      </h3>
+      <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+        The Zero Gravity Pen can be used to write in any orientation, including
+        upside-down. It even works in outer space.
+      </p>
+    </div>
   </body>
 </html>
