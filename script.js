@@ -56,8 +56,8 @@ console.log(fruits.length);
 // gets the name - if the name's lenght is greater than 5 charachters than show
 // that the p
 function getPassword() {
-  let password = prompt("Enter password");
   let name = prompt("Enter name");
+  let password = prompt("Enter password");
 
   if (name.length > 5) {
     console.log(password);
