@@ -3,18 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Guess the Number</title>
   </head>
   <body>
-    <h1>Guess the Number</h1>
+    <div class="hidden-section">
+      <h1>Guess the Number</h1>
+      <h4>(Enter a number between 0 and 10)</h4>
 
-    <div id="line">
-      <div id="square">
-        <div id="question-mark">?</div>
+      <div id="line">
+        <div id="square">
+          <div id="question-mark">?</div>
+        </div>
       </div>
     </div>
-
+    <div class="guess">
+      <input type="number" name="number" id="guess" />
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
