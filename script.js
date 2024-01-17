@@ -68,8 +68,8 @@
 function getEvenNumbers() {
   let numbers = [1, 6, 7, 8, 4, 2, 12, 14, 5];
   numbers.forEach((element) => {
-    if (element % 2 === 0) {
-      console.log(numbers[element]);
+    if (element / 2 === 0) {
+      console.log(element);
     }
   });
 }
