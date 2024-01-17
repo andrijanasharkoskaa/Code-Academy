@@ -65,13 +65,46 @@
 // }
 // getPassword();
 
-function getEvenNumbers() {
-  let numbers = [1, 6, 7, 8, 4, 2, 12, 14, 5];
-  numbers.forEach((element) => {
-    if (element / 2 === 0) {
-      console.log(element);
-    }
-  });
+// function getEvenNumbers() {
+//   let numbers = [1, 6, 7, 8, 4, 2, 12, 14, 5];
+//   numbers.forEach((element) => {
+//     if (element / 2 === 0) {
+//       console.log(element);
+//     }
+//   });
+// }
+
+// getEvenNumbers();
+
+// LOOPS
+
+// FOR LOOP
+const fruits = ["apples", "oranges", "kiwi", "bananas", "pears"];
+
+for (let index = 0; index < fruits.length; index++) {
+  const element = fruits[index];
+  console.log(element);
 }
 
-getEvenNumbers();
+// forEach LOOP
+const vegetables = [
+  "cucumbers",
+  "lettuce",
+  "potatoes",
+  "onion",
+  "garlic",
+  "broccoli",
+  "cauliflower",
+  "peppers",
+  "carrots",
+  "asparagus",
+];
+
+vegetables.forEach((element) => {
+  console.log(element);
+});
+
+// List items from 100 to 0
+for (let number = 100; number >= 0; number--) {
+  console.log(number);
+}
