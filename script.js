@@ -78,33 +78,50 @@
 
 // LOOPS
 
-// FOR LOOP
-const fruits = ["apples", "oranges", "kiwi", "bananas", "pears"];
+// // FOR LOOP
+// const fruits = ["apples", "oranges", "kiwi", "bananas", "pears"];
 
-for (let index = 0; index < fruits.length; index++) {
-  const element = fruits[index];
-  console.log(element);
+// for (let index = 0; index < fruits.length; index++) {
+//   const element = fruits[index];
+//   console.log(element);
+// }
+
+// // forEach LOOP
+// const vegetables = [
+//   "cucumbers",
+//   "lettuce",
+//   "potatoes",
+//   "onion",
+//   "garlic",
+//   "broccoli",
+//   "cauliflower",
+//   "peppers",
+//   "carrots",
+//   "asparagus",
+// ];
+
+// vegetables.forEach((element) => {
+//   console.log(element);
+// });
+
+// // List items from 100 to 0
+// for (let number = 100; number >= 0; number--) {
+//   console.log(number);
+// }
+
+//OBJECTS
+
+const car = {
+  name: "Ford",
+  year: 2014,
+  sold: true,
+};
+
+// forIn loop
+for (const key in car) {
+  console.log(key);
 }
 
-// forEach LOOP
-const vegetables = [
-  "cucumbers",
-  "lettuce",
-  "potatoes",
-  "onion",
-  "garlic",
-  "broccoli",
-  "cauliflower",
-  "peppers",
-  "carrots",
-  "asparagus",
-];
-
-vegetables.forEach((element) => {
-  console.log(element);
-});
-
-// List items from 100 to 0
-for (let number = 100; number >= 0; number--) {
-  console.log(number);
+for (const key in car) {
+  console.log(car.name);
 }
