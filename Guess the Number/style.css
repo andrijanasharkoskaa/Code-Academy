@@ -45,7 +45,7 @@ h4 {
 .guess {
   margin-top: 400px;
   width: 100%;
-  height: 100px;
+  height: 200px;
 }
 #guess {
   height: 80px;
@@ -54,4 +54,18 @@ h4 {
   text-align: center;
   font-family: "DotGothic16", sans-serif;
   font-weight: 700;
+}
+#check {
+  width: 80px;
+  height: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: "DotGothic16", sans-serif;
+  color: blue;
+  letter-spacing: 2px;
+  padding: 2px 0;
+}
+#check:hover {
+  background-color: blue;
+  color: white;
 }
