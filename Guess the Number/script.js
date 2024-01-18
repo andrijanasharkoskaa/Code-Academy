@@ -17,6 +17,6 @@ function checkNumber() {
   } else if (guessNumber === randomNumber) {
     message.innerHTML = "Correct!";
     message.style.color = "green";
-    message.questionMark.innerHTML = randomNumber;
+    questionMark.innerHTML = randomNumber;
   }
 }
