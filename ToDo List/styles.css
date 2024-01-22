@@ -15,7 +15,9 @@ h1 {
   width: 50%;
   height: auto;
 }
-
+ul {
+  width: 50%;
+}
 .todo ul li {
   margin: 0 auto;
   margin: 30px;
@@ -25,10 +27,11 @@ h1 {
   color: white;
   font-size: 20px;
   font-weight: 800;
-  width: 30%;
+  width: 45%;
 }
 .fa-xmark {
   margin-left: 160px;
+  width: 20%;
 }
 
 .fa-xmark:hover {
