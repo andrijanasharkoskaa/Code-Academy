@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  margin-left: 90px;
+  color: chocolate;
+  margin-top: 50px;
+}
+
+.todo {
+  text-align: center;
+  padding: 40px;
+  margin: 10px;
+  width: 50%;
+  height: auto;
+}
+
+.todo ul li {
+  margin: 0 auto;
+  margin: 30px;
+  list-style-type: none;
+  background-color: chocolate;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  width: 30%;
+}
+.fa-xmark {
+  margin-left: 160px;
+}
+
+.fa-xmark:hover {
+  color: gray;
+}
