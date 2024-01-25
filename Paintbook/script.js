@@ -4,12 +4,12 @@ const paintDivs = document.querySelectorAll(".paint-div");
 
 colorDivs.forEach((colorDiv) => {
   colorDiv.addEventListener("click", () => {
-    console.log("a div was clicked");
-  });
-});
-
-paintDivs.forEach((paintDiv) => {
-  paintDiv.addEventListener("click", () => {
-    console.log(" a TO-BE painted div is clicked");
+    const backgroundColor = window.getComputedStyle(colorDiv).backgroundColor;
+    paintDivs.forEach((paintDiv) => {
+      paintDiv.addEventListener("click", () => {
+        console.log("A TO-BE painted div is clicked");
+        paintDiv.style.backgroundColor = backgroundColor;
+      });
+    });
   });
 });
