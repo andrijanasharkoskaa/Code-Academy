@@ -19,7 +19,7 @@ h1 {
 }
 .paint-div {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgb(185, 184, 184);
+  border: 5px groove rgb(185, 184, 184);
   padding: 20px;
 }
 .paint-div:hover {
@@ -65,4 +65,10 @@ h1 {
 }
 .color-light-green {
   background-color: rgb(52, 223, 33);
+}
+.color-orange {
+  background-color: orange;
+}
+.color-black {
+  background-color: black;
 }
