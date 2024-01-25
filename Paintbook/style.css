@@ -1,12 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
 .paintbook {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
-  padding: 10px;
+  padding: 20px;
 }
 .paint-div {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid gray;
   padding: 20px;
-  font-size: 30px;
-  text-align: center;
 }
