@@ -36,3 +36,6 @@ function fun() {
   newItem.innerHTML = userInput.value;
   list.appendChild(newItem);
 }
+
+const secondList = document.getElementById("second-list");
+console.log(secondList.children);
