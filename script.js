@@ -89,5 +89,16 @@ function leapYear(year) {}
 // getURL();
 
 // 10.Write a JavaScript exercise to create a variable using a user-defined name.
+function userVar() {
+  const userVariable = prompt("Enter a variable");
+  return userVariable;
+}
+userVar();
 
 // 11.Write a JavaScript exercise to get the filename extension.
+function getExtension(file) {
+  const fileExtension = file.split(".");
+  console.log(fileExtension[1]);
+}
+
+getExtension("script.js");
