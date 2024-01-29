@@ -59,16 +59,35 @@
 
 function leapYear(year) {}
 
-// 7.Write a JavaScript program to calculate multiplication and division of two numbers (input from the user)
-let numebr1 = document.getElementById("number-one");
-let number2 = document.getElementById("number-two");
-let p = document.getElementById("result");
+// 7.Write a JavaScript program to calculate multiplication and division of two numbers (input from the user) - I have created inputs in the HTML doc
+// let numebr1 = document.getElementById("number-one");
+// let number2 = document.getElementById("number-two");
+// let p = document.getElementById("result");
 
-function multiply() {
-  let result = numebr1.value * number2.value;
-  p.innerText = result;
-}
-function divide() {
-  let result = numebr1.value / number2.value;
-  p.innerText = result;
-}
+// function multiply() {
+//   let result = numebr1.value * number2.value;
+//   p.innerText = result;
+// }
+// function divide() {
+//   let result = numebr1.value / number2.value;
+//   p.innerText = result;
+// }
+
+// 8. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+// [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+// Expected Output :
+// 60°C is 140 °F
+// 45°F is 7.222222222222222°C
+
+// 9. Write a JavaScript program to get the website URL (loading page).
+
+// function getURL() {
+//   const currentURL = window.location.href;
+//   console.log(currentURL);
+// }
+
+// getURL();
+
+// 10.Write a JavaScript exercise to create a variable using a user-defined name.
+
+// 11.Write a JavaScript exercise to get the filename extension.
