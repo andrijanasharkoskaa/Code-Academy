@@ -111,17 +111,28 @@
 
 //OBJECTS
 
-const car = {
-  name: "Ford",
-  year: 2014,
-  sold: true,
-};
+// const car = {
+//   name: "Ford",
+//   year: 2014,
+//   sold: true,
+// };
 
-// forIn loop
-for (const key in car) {
-  console.log(key);
-}
+// // forIn loop
+// for (const key in car) {
+//   console.log(key);
+// }
 
-for (const key in car) {
-  console.log(car.name);
+// for (const key in car) {
+//   console.log(car.name);
+// }
+
+function letterFinder(word, match) {
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === match) {
+      console.log("Found the", match, "at", i);
+    } else {
+      console.log("---No match found at", i);
+    }
+  }
 }
+letterFinder("test", "t");
