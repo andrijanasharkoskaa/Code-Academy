@@ -149,8 +149,17 @@ function leapYear(year) {}
 // checkNum(50, 30);
 // checkNum(10, 10);
 
-// 16. Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+// 16.Write a JavaScript program to create another string by adding "Py" in front of a given string. If the given string begins with "Py" return the original string.
 
+// function addPy(str) {
+//   if (str[0] === "P" && str[1] === "y") {
+//     return str;
+//   } else {
+//     return "Py" + str;
+//   }
+// }
+
+// addPy("Python");
 // 17. Write a JavaScript program to check two given integers whether one is positive and another one is negative.
 // function checkInt(a, b) {
 //   if ((a > 0 && b < 0) || (a < 0 && b > 0)) {
@@ -160,3 +169,14 @@ function leapYear(year) {}
 //   }
 // }
 // checkInt(5, -1);
+
+// 18.Write a JavaScript program to remove a character at the specified position in a given string and return the modified string.
+
+function removeChar(str, pos) {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === pos) {
+    }
+  }
+}
+
+removeChar("test", 1);
