@@ -113,3 +113,32 @@ function leapYear(year) {}
 //   }
 // }
 // getDifference(27);
+
+// 13. Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum.
+
+// function sumOfTwo(a, b) {
+//   if (a === b) {
+//     return (a + b) * 3;
+//   } else {
+//     return a + b;
+//   }
+// }
+
+// sumOfTwo(5, 5);
+
+// 14. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple the absolute difference if the specified number is greater than 19.
+function absoluteDifference(num) {
+  if (Math.abs(num > 19)) {
+    return Math.abs(num - 19) * 3;
+  } else {
+    return Math.abs(num - 19);
+  }
+}
+
+absoluteDifference(20);
+
+// 15. Write a JavaScript program to check a pair of numbers and return true if one of the numbers is 50 or if their sum is 50.
+
+// 16. Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+
+// 17. Write a JavaScript program to check two given integers whether one is positive and another one is negative.
