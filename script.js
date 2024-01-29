@@ -89,16 +89,27 @@ function leapYear(year) {}
 // getURL();
 
 // 10.Write a JavaScript exercise to create a variable using a user-defined name.
-function userVar() {
-  const userVariable = prompt("Enter a variable");
-  return userVariable;
-}
-userVar();
+// function userVar() {
+//   const userVariable = prompt("Enter a variable");
+//   return userVariable;
+// }
+// userVar();
 
 // 11.Write a JavaScript exercise to get the filename extension.
-function getExtension(file) {
-  const fileExtension = file.split(".");
-  console.log(fileExtension[1]);
-}
+// function getExtension(file) {
+//   const fileExtension = file.split(".");
+//   console.log(fileExtension[1]);
+// }
 
-getExtension("script.js");
+// getExtension("myscript.php");
+
+// 12.Write a JavaScript program to get the difference between a given number and 13, if the number is broader than 13 return double the absolute difference.
+
+// function getDifference(num) {
+//   if (num - 13 > 13) {
+//     return Math.abs(num - 13) * 2;
+//   } else {
+//     return Math.abs(num - 13);
+//   }
+// }
+// getDifference(27);
