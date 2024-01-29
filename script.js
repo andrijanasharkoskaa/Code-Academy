@@ -42,18 +42,33 @@
 
 // 5. Write a JavaScript program to rotate the string 'w3resource' in the right direction. This is done by periodically removing one letter from the string end and attaching it to the front.
 
-function rotateString(str) {
-  let characters = str.split("");
+// function rotateString(str) {
+//   let characters = str.split("");
 
-  let lastChar = characters.pop();
-  characters.unshift(lastChar);
+//   let lastChar = characters.pop();
+//   characters.unshift(lastChar);
 
-  let rotatedStr = characters.join("");
+//   let rotatedStr = characters.join("");
 
-  return rotatedStr;
+//   return rotatedStr;
+// }
 
-  // let lastLetter = strArr.pop();
-  // console.log(lastLetter);
+// console.log(rotateString("w3resource"));
+
+// 6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
+
+function leapYear(year) {}
+
+// 7.Write a JavaScript program to calculate multiplication and division of two numbers (input from the user)
+let numebr1 = document.getElementById("number-one");
+let number2 = document.getElementById("number-two");
+let p = document.getElementById("result");
+
+function multiply() {
+  let result = numebr1.value * number2.value;
+  p.innerText = result;
 }
-
-console.log(rotateString("w3resource"));
+function divide() {
+  let result = numebr1.value / number2.value;
+  p.innerText = result;
+}
