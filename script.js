@@ -127,18 +127,36 @@ function leapYear(year) {}
 // sumOfTwo(5, 5);
 
 // 14. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple the absolute difference if the specified number is greater than 19.
-function absoluteDifference(num) {
-  if (Math.abs(num > 19)) {
-    return Math.abs(num - 19) * 3;
-  } else {
-    return Math.abs(num - 19);
-  }
-}
+// function absoluteDifference(num) {
+//   if (Math.abs(num > 19)) {
+//     return Math.abs(num - 19) * 3;
+//   } else {
+//     return Math.abs(num - 19);
+//   }
+// }
 
-absoluteDifference(20);
+// absoluteDifference(20);
 
 // 15. Write a JavaScript program to check a pair of numbers and return true if one of the numbers is 50 or if their sum is 50.
+
+// function checkNum(a, b) {
+//   if (a === 50 || a + b === 50) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// checkNum(50, 30);
+// checkNum(10, 10);
 
 // 16. Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
 
 // 17. Write a JavaScript program to check two given integers whether one is positive and another one is negative.
+// function checkInt(a, b) {
+//   if ((a > 0 && b < 0) || (a < 0 && b > 0)) {
+//     return "One is positive and one is negative";
+//   } else {
+//     return "Error";
+//   }
+// }
+// checkInt(5, -1);
