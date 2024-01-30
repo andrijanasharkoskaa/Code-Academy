@@ -12,7 +12,7 @@ let movies = [
   { title: "Scary Movie 1", rating: 2 },
   { title: "Barbie", rating: 3 },
   { title: "Little Man", rating: 3 },
-  { title: "Saw", rating: 1 },
+  { title: "Twilight", rating: 2 },
 ];
 
 function enterMovie() {
@@ -53,3 +53,5 @@ function filterMovies() {
   });
   console.log(filteredMovies);
 }
+
+function sortMovies() {}
