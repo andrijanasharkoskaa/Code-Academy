@@ -3,12 +3,16 @@ let leftDiv = document.querySelector(".left-div");
 const movieList = document.getElementById("movie-list");
 
 let movies = [
-  { title: "Movie 1", rating: 4 },
-  { title: "Movie 2", rating: 3 },
-  { title: "Movie 3", rating: 2 },
-  { title: "Movie 4", rating: 5 },
-  { title: "Movie 5", rating: 5 },
-  { title: "Movie 6", rating: 1 },
+  { title: "Shawshank Redemption", rating: 5 },
+  { title: "Interstellar", rating: 5 },
+  { title: "Ice Age", rating: 4 },
+  { title: "Oppenheimer", rating: 5 },
+  { title: "The Theory of Everything", rating: 5 },
+  { title: "Saw", rating: 1 },
+  { title: "Scary Movie 1", rating: 2 },
+  { title: "Barbie", rating: 3 },
+  { title: "Little Man", rating: 3 },
+  { title: "Saw", rating: 1 },
 ];
 
 function enterMovie() {
@@ -16,11 +20,36 @@ function enterMovie() {
   let rating = document.getElementById("rating").value;
 
   const movieItem = document.createElement("li");
-  movieItem.innerHTML = `${movieTitle}   <span>${rating}</span>`;
+  movieItem.classList.add("movie-item");
+  movieItem.innerHTML = `Movie Title: ${movieTitle}   <span class="my-rating" class="rate">Rating: ${rating}</span>`;
   movieList.appendChild(movieItem);
   console.log(movieItem);
 }
 
 function addExistingMovies() {
-  movies.map((movie) => {});
+  movies.map((movie) => {
+    const movieItem = document.createElement("li");
+    movieItem.classList.add("movie-item");
+    movieItem.innerHTML = `Movie Title: ${movie.title}   <span id="my-rating" class="rate">Rating: ${movie.rating}</span>`;
+    movieList.appendChild(movieItem);
+  });
+}
+addExistingMovies();
+
+function filterMovies() {
+  movieList.innerHTML = "";
+  let selectedRating = document.getElementById("filter-movies").value;
+
+  const filteredMovies = movies.filter(
+    (movie) => movie.rating === parseInt(selectedRating)
+  );
+  // movieList.innerText = `${filteredMovies.title} ${filteredMovies.rating}`;
+
+  filteredMovies.forEach((movie) => {
+    const movieItem = document.createElement("li");
+    movieItem.classList.add("movie-item");
+    movieItem.innerHTML = `Movie Title: ${movie.title}   <span class="my-rating" class="rate">Rating: ${movie.rating}</span>`;
+    movieList.appendChild(movieItem);
+  });
+  console.log(filteredMovies);
 }

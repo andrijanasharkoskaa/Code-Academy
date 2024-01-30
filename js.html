@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>JS Exercises</title>
   </head>
   <body>
@@ -29,6 +30,16 @@
 
       <!-- <button type="button">Insert Rating</button> -->
     </form>
+    <label for="filter-movies"></label>
+    <div class="filter-movies">
+      <select name="filter-movies" id="filter-movies" onchange="filterMovies()">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
 
     <div class="movies-db">
       <div class="left-div">
