@@ -172,11 +172,23 @@ function leapYear(year) {}
 
 // 18.Write a JavaScript program to remove a character at the specified position in a given string and return the modified string.
 
-function removeChar(str, pos) {
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === pos) {
-    }
+// function removeChar(str, pos) {
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === pos) {
+//     }
+//   }
+// }
+
+// removeChar("test", 1);
+
+// 19. Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters. The string length must be broader than or equal to 1.
+
+function createNewStr(str) {
+  if (str.length >= 1) {
+    let firstStr = str[0];
+    let lastStr = str.length - 1;
+    console.log(firstStr, lastStr);
   }
 }
 
-removeChar("test", 1);
+createNewStr("new");
