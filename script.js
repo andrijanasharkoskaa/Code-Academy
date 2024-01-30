@@ -185,10 +185,19 @@ function leapYear(year) {}
 
 function createNewStr(str) {
   if (str.length >= 1) {
-    let firstStr = str[0];
-    let lastStr = str.length - 1;
-    console.log(firstStr, lastStr);
+    let strArray = str.split("");
+
+    let firstChar = strArray[0];
+    let lastChar = strArray[strArray.length - 1];
+
+    strArray[0] = lastChar;
+    strArray[strArray.length - 1] = firstChar;
+
+    return strArray.join(",");
+    // console.log(strArray, firstStr, lastStr);
+  } else {
+    return "The string must be at least 1 character in length.";
   }
 }
 
-createNewStr("new");
+console.log(createNewStr("new"));
