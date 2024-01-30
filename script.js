@@ -183,21 +183,21 @@ function leapYear(year) {}
 
 // 19. Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters. The string length must be broader than or equal to 1.
 
-function createNewStr(str) {
-  if (str.length >= 1) {
-    let strArray = str.split("");
+// function createNewStr(str) {
+//   if (str.length >= 1) {
+//     let strArray = str.split("");
 
-    let firstChar = strArray[0];
-    let lastChar = strArray[strArray.length - 1];
+//     let firstChar = strArray[0];
+//     let lastChar = strArray[strArray.length - 1];
 
-    strArray[0] = lastChar;
-    strArray[strArray.length - 1] = firstChar;
+//     strArray[0] = lastChar;
+//     strArray[strArray.length - 1] = firstChar;
 
-    return strArray.join(",");
-    // console.log(strArray, firstStr, lastStr);
-  } else {
-    return "The string must be at least 1 character in length.";
-  }
-}
+//     return strArray.join(",");
+//     // console.log(strArray, firstStr, lastStr);
+//   } else {
+//     return "The string must be at least 1 character in length.";
+//   }
+// }
 
-console.log(createNewStr("new"));
+// console.log(createNewStr("new"));
