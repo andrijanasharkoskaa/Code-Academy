@@ -6,15 +6,28 @@
     <title>JS Exercises</title>
   </head>
   <body>
-    <div class="calculate-exercise">
+    <!-- <div class="calculate-exercise">
       <input type="number" name="" id="number-one" />
 
       <input type="number" name="" id="number-two" />
 
       <button onclick="multiply()">Multiply</button>
       <button onclick="divide()">Divide</button>
-    </div>
+    </div> -->
 
+    <form action="">
+      <input type="text" name="movie" id="movie" />
+      <button type="button" onclick="enterMovie()">Insert Movie</button>
+
+      <input type="number" name="rating" id="rating" onclick="enterRating()" />
+      <button type="button">Insert Rating</button>
+    </form>
+
+    <div class="movies-db">
+      <div class="left-div">
+        <ul></ul>
+      </div>
+    </div>
     <p id="result"></p>
     <script src="script.js"></script>
   </body>

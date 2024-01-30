@@ -57,7 +57,7 @@
 
 // 6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
 
-function leapYear(year) {}
+// function leapYear(year) {}
 
 // 7.Write a JavaScript program to calculate multiplication and division of two numbers (input from the user) - I have created inputs in the HTML doc
 // let numebr1 = document.getElementById("number-one");
@@ -201,3 +201,48 @@ function leapYear(year) {}
 // }
 
 // console.log(createNewStr("new"));
+
+// 0. Create an empty form tag
+
+//2. Create an input html element that allows users to insert
+// a new movie inside the database
+
+// Create an input that allows you to insert a rating for the movie
+
+// 3. Create an array of movie titles with 10 items and ratings
+
+// 4. List the database in html using the map function
+
+// 5. Create a filter option dropdown that allows users to see elements
+//from the array based on the selected rating (rating (0-5 stars));
+let moviesDB = document.querySelector(".movies-db");
+
+let movies = [
+  { title: "Movie 1", rating: 4 },
+  { title: "Movie 2", rating: 3 },
+  { title: "Movie 3", rating: 2 },
+  { title: "Movie 4", rating: 5 },
+  { title: "Movie 5", rating: 5 },
+  { title: "Movie 6", rating: 1 },
+];
+
+function enterMovie() {
+  let movieTitle = document.getElementById("movie").value;
+  let rating = document.getElementById("rating").value;
+
+  const leftDiv = document.createElement("div");
+  const newMovie = document.createElement("ul");
+  const newMovieTitle = document.createElement("li");
+
+  moviesDB.appendChild(newMovie);
+  newMovie.appendChild(newMovieTitle);
+  newMovieTitle.innerText = movieTitle;
+
+  console.log(newMovie);
+
+  // if (isNaN(rating) || rating < 0 || rating > 5) {
+  //   alert("Please enter a valid rating between 0 and 5.");
+
+  //   console.log(rating);
+  // }
+}
