@@ -30,7 +30,7 @@ function addExistingMovies() {
   movies.map((movie) => {
     const movieItem = document.createElement("li");
     movieItem.classList.add("movie-item");
-    movieItem.innerHTML = `Movie Title: ${movie.title}   <span id="my-rating" class="rate">Rating: ${movie.rating}</span>`;
+    movieItem.innerHTML = `Movie Title: ${movie.title}   <span id="my-rating" class="my-rating">Rating: ${movie.rating}</span>`;
     movieList.appendChild(movieItem);
   });
 }

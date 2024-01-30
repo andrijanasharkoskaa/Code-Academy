@@ -1,3 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+body {
+  box-sizing: border-box;
+}
+
 #my-rating {
   margin-left: 20px;
+}
+.my-movies {
+  display: flex;
+  justify-content: flex-end;
+}
+.right-side {
+  width: 25%;
+  height: auto;
+  border: 1px solid rgb(66, 66, 66);
+  /* text-align: center; */
+  margin-left: 40px;
+}
+.left-side {
+  width: 75%;
+  height: auto;
+}
+.form {
+  margin-top: 80px;
+  font-size: 24px;
+}
+.form {
+  margin-left: 20px;
+}
+#sort-movies {
+  margin-left: 20px;
+}
+.form input {
+  margin-bottom: 30px;
+  border: 1px solid red;
+}
+.form,
+.filter-movies,
+.sort-movies,
+.movies-db {
+  width: 100%;
+  height: auto;
+  /* text-align: center; */
+  /* border: 1px solid blue; */
+}
+#movie-list li {
+  list-style-type: none;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-weight: 800;
+}
+#my-rating,
+.my-rating {
+  font-weight: 100;
+  color: yellow;
+}
+.my-rating {
+  width: 100px;
+  text-align: right;
+  border: 1px solid white;
+}
+.rate {
+  color: yellow;
 }
