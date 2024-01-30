@@ -215,34 +215,3 @@
 
 // 5. Create a filter option dropdown that allows users to see elements
 //from the array based on the selected rating (rating (0-5 stars));
-let moviesDB = document.querySelector(".movies-db");
-
-let movies = [
-  { title: "Movie 1", rating: 4 },
-  { title: "Movie 2", rating: 3 },
-  { title: "Movie 3", rating: 2 },
-  { title: "Movie 4", rating: 5 },
-  { title: "Movie 5", rating: 5 },
-  { title: "Movie 6", rating: 1 },
-];
-
-function enterMovie() {
-  let movieTitle = document.getElementById("movie").value;
-  let rating = document.getElementById("rating").value;
-
-  const leftDiv = document.createElement("div");
-  const newMovie = document.createElement("ul");
-  const newMovieTitle = document.createElement("li");
-
-  moviesDB.appendChild(newMovie);
-  newMovie.appendChild(newMovieTitle);
-  newMovieTitle.innerText = movieTitle;
-
-  console.log(newMovie);
-
-  // if (isNaN(rating) || rating < 0 || rating > 5) {
-  //   alert("Please enter a valid rating between 0 and 5.");
-
-  //   console.log(rating);
-  // }
-}
