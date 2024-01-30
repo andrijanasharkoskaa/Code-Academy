@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/28d406b2ff.js"
+      crossorigin="anonymous"
+    ></script>
     <title>JS Exercises</title>
   </head>
   <body>
@@ -20,6 +24,13 @@
       <div class="left-side"></div>
 
       <div class="right-side">
+        <div class="icons">
+          <h3 class="my-db">My Movie Database</h3>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <i class="fa-solid fa-gear"></i>
+          <i class="fa-solid fa-user"></i>
+        </div>
+
         <div class="form">
           <form id="movie-form">
             <label for="movie">Enter Your Movie:</label><br />
@@ -33,31 +44,35 @@
               max="5"
               onclick="enterRating()"
             /><br />
-            <button type="button" onclick="enterMovie()">Insert Movie</button>
+            <button type="button" onclick="enterMovie()" id="enterBtn">
+              Insert Movie
+            </button>
 
             <!-- <button type="button">Insert Rating</button> -->
           </form>
         </div>
-        <div class="filter-movies">
-          <label for="filter-movies">Select Movie Rating:</label>
-          <select
-            name="filter-movies"
-            id="filter-movies"
-            onchange="filterMovies()"
-          >
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="sort-movies">
-          <label for="sort-movies">Sort Movies:</label>
-          <select name="sort-movies" id="sort-movies" onchange="sortMovies()">
-            <option value="Ascending">Ascending</option>
-            <option value="Descending">Descending</option>
-          </select>
+        <div class="filters">
+          <div class="filter-movies">
+            <label for="filter-movies">Select Movie Rating:</label>
+            <select
+              name="filter-movies"
+              id="filter-movies"
+              onchange="filterMovies()"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="sort-movies">
+            <label for="sort-movies">Sort Movies:</label>
+            <select name="sort-movies" id="sort-movies" onchange="sortMovies()">
+              <option value="Ascending">Ascending</option>
+              <option value="Descending">Descending</option>
+            </select>
+          </div>
         </div>
         <div class="movies-db">
           <div class="left-div">

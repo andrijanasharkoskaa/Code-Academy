@@ -21,7 +21,7 @@ function enterMovie() {
 
   const movieItem = document.createElement("li");
   movieItem.classList.add("movie-item");
-  movieItem.innerHTML = `Movie Title: ${movieTitle}   <span class="my-rating" class="rate">Rating: ${rating}</span>`;
+  movieItem.innerHTML = `<span class="movie-title">Movie Title:</span> ${movieTitle}   <span class="my-rating" class="rate">Rating: ${rating} <i class="fa-solid fa-star"></i></span>`;
   movieList.appendChild(movieItem);
   console.log(movieItem);
 }
@@ -30,7 +30,7 @@ function addExistingMovies() {
   movies.map((movie) => {
     const movieItem = document.createElement("li");
     movieItem.classList.add("movie-item");
-    movieItem.innerHTML = `Movie Title: ${movie.title}   <span id="my-rating" class="my-rating">Rating: ${movie.rating}</span>`;
+    movieItem.innerHTML = `<span class="movie-title">Movie Title:</span> ${movie.title}   <span id="my-rating" class="my-rating">Rating: ${movie.rating} <i class="fa-solid fa-star"></i></span>`;
     movieList.appendChild(movieItem);
   });
 }
@@ -48,7 +48,7 @@ function filterMovies() {
   filteredMovies.forEach((movie) => {
     const movieItem = document.createElement("li");
     movieItem.classList.add("movie-item");
-    movieItem.innerHTML = `Movie Title: ${movie.title}   <span class="my-rating" class="rate">Rating: ${movie.rating}</span>`;
+    movieItem.innerHTML = `<span class="movie-title">Movie Title:</span> ${movie.title}   <span class="my-rating" class="rate">Rating: ${movie.rating} <i class="fa-solid fa-star"></i></span>`;
     movieList.appendChild(movieItem);
   });
   console.log(filteredMovies);

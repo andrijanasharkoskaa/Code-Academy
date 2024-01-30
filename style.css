@@ -17,18 +17,20 @@ body {
 }
 .right-side {
   width: 25%;
-  height: auto;
+  height: 900px;
   border: 1px solid rgb(66, 66, 66);
   /* text-align: center; */
   margin-left: 40px;
+  position: fixed;
 }
 .left-side {
   width: 75%;
   height: auto;
+  position: fixed;
 }
 .form {
   margin-top: 80px;
-  font-size: 24px;
+  font-size: 20px;
 }
 .form {
   margin-left: 20px;
@@ -38,7 +40,18 @@ body {
 }
 .form input {
   margin-bottom: 30px;
-  border: 1px solid red;
+  border: 1px solid gray;
+  padding: 4px 10px;
+  font-size: 20px;
+}
+#enterBtn {
+  padding: 4px 20px;
+  background-color: rgb(155, 155, 155);
+  color: black;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(155, 155, 155);
+  border-radius: 10px;
 }
 .form,
 .filter-movies,
@@ -52,9 +65,8 @@ body {
 #movie-list li {
   list-style-type: none;
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 20px;
-  font-weight: 800;
 }
 #my-rating,
 .my-rating {
@@ -62,10 +74,45 @@ body {
   color: yellow;
 }
 .my-rating {
-  width: 100px;
-  text-align: right;
-  border: 1px solid white;
-}
-.rate {
+  border: 1px solid rgb(105, 105, 105);
   color: yellow;
+  padding: 4px 10px;
+  margin-left: 20px;
+}
+.movie-title {
+  color: gray;
+  font-weight: 800;
+  margin-right: 10px;
+}
+.filters {
+  display: flex;
+}
+.filter-movies,
+.sort-movies {
+  font-size: 16px;
+
+  margin: 20px 0 20px 20px;
+}
+.fa-star {
+  color: yellow;
+  font-size: 14px;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid rgb(66, 66, 66);
+  height: 50px;
+}
+
+.fa-user,
+.fa-gear,
+.fa-arrow-up-right-from-square {
+  font-size: 20px;
+  margin: 10px 20px;
+  color: rgb(155, 155, 155);
+}
+.my-db {
+  margin-right: 10px;
+  font-size: 26px;
 }
