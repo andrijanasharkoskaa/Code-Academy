@@ -43,7 +43,6 @@ function filterMovies() {
   const filteredMovies = movies.filter(
     (movie) => movie.rating === parseInt(selectedRating)
   );
-  // movieList.innerText = `${filteredMovies.title} ${filteredMovies.rating}`;
 
   filteredMovies.forEach((movie) => {
     const movieItem = document.createElement("li");
@@ -53,22 +52,6 @@ function filterMovies() {
   });
   console.log(filteredMovies);
 }
-
-// let filterDropdown = document.getElementById("filter-movies");
-
-// let sortDropdownValue = document.getElementById("sort-movies").value;
-
-// function sortMovies() {
-//   console.log(sortDropdownValue);
-//   if (sortDropdownValue === "Ascending") {
-//     filterDropdown.sort(function (a, b) {
-//       return a - b;
-//       console.log(filterDropdown);
-//     });
-//   }
-// }
-
-// sortMovies();
 
 function sortMovies() {
   let sortValue = document.getElementById("sort-movies").value;
