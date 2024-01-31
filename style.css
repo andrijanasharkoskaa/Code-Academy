@@ -20,7 +20,7 @@ body {
 .left-side {
   width: 25%;
   height: auto;
-  border: 1px solid yellow;
+  border: 1px solid rgb(66, 66, 66);
 }
 .middle-section {
   width: 50%;
@@ -137,4 +137,29 @@ body {
 .movie-title a {
   color: gray;
   text-decoration: none;
+}
+
+.movie-title a:hover {
+  background-color: gray;
+  color: white;
+}
+.category-heading {
+  padding: 20px 40px;
+}
+.icons-left {
+  color: white;
+  margin-left: 40px;
+  padding-top: 10px;
+}
+.icon-left {
+  font-size: 20px;
+  margin-left: 20px;
+}
+.icon {
+  color: white;
+  font-size: 18px;
+}
+
+.div {
+  margin-top: 10px;
 }
