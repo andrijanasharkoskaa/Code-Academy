@@ -70,28 +70,32 @@ function filterMovies() {
 
 // sortMovies();
 
-// function filterMovies() {
-//   let selectedRating = document.getElementById("filter-movies").value;
-//   console.log("Selected Rating:", selectedRating);
-// }
+function sortMovies() {
+  let sortValue = document.getElementById("sort-movies").value;
+  console.log("Sort Order:", sortValue);
 
-// function sortMovies() {
-//   let sortValue = document.getElementById("sort-movies").value;
-//   console.log("Sort Order:", sortValue);
+  if (sortValue === "Ascending") {
+    movies.sort(function (a, b) {
+      return a.rating - b.rating;
+    });
+  } else if (sortValue === "Descending") {
+    movies.sort(function (a, b) {
+      return b.rating - a.rating;
+    });
+  }
 
-//   if (sortValue === "Ascending") {
-//     movies.sort(function (a, b) {
-//       return a.rating - b.rating;
-//     });
-//   } else if (sortValue === "Descending") {
-//     movies.sort(function (a, b) {
-//       return b.rating - a.rating;
-//     });
-//   }
+  displayMovies();
+}
 
-//   displayMovies();
-// }
+function displayMovies() {
+  let movieList = document.getElementById("movie-list");
 
-// function displayMovies() {
-//   console.log("Movies after sorting:", movies);
-// }
+  movieList.innerHTML = "";
+
+  movies.forEach((movie) => {
+    const movieItem = document.createElement("li");
+    movieItem.classList.add("movie-item");
+    movieItem.innerHTML = `<span class="movie-title">Movie Title:</span> ${movie.title}   <span class="my-rating" class="rate">Rating: ${movie.rating} <i class="fa-solid fa-star"></i></span>`;
+    movieList.appendChild(movieItem);
+  });
+}
