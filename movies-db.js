@@ -54,4 +54,44 @@ function filterMovies() {
   console.log(filteredMovies);
 }
 
-function sortMovies() {}
+// let filterDropdown = document.getElementById("filter-movies");
+
+// let sortDropdownValue = document.getElementById("sort-movies").value;
+
+// function sortMovies() {
+//   console.log(sortDropdownValue);
+//   if (sortDropdownValue === "Ascending") {
+//     filterDropdown.sort(function (a, b) {
+//       return a - b;
+//       console.log(filterDropdown);
+//     });
+//   }
+// }
+
+// sortMovies();
+
+// function filterMovies() {
+//   let selectedRating = document.getElementById("filter-movies").value;
+//   console.log("Selected Rating:", selectedRating);
+// }
+
+// function sortMovies() {
+//   let sortValue = document.getElementById("sort-movies").value;
+//   console.log("Sort Order:", sortValue);
+
+//   if (sortValue === "Ascending") {
+//     movies.sort(function (a, b) {
+//       return a.rating - b.rating;
+//     });
+//   } else if (sortValue === "Descending") {
+//     movies.sort(function (a, b) {
+//       return b.rating - a.rating;
+//     });
+//   }
+
+//   displayMovies();
+// }
+
+// function displayMovies() {
+//   console.log("Movies after sorting:", movies);
+// }

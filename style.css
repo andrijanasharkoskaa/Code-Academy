@@ -6,7 +6,7 @@
 }
 body {
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #my-rating {
@@ -85,6 +85,15 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .right-side {
   width: 25%;
   height: 1000px;
@@ -112,11 +121,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 #enterBtn {
   padding: 4px 20px;
-  background-color: rgb(155, 155, 155);
-  color: black;
+  background-color: black;
+  color: yellow;
   font-size: 20px;
   margin-bottom: 20px;
-  border: 1px solid rgb(155, 155, 155);
+  border: 1px solid yellow;
   border-radius: 10px;
 }
 .form,
