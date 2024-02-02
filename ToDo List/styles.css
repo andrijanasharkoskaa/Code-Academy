@@ -9,8 +9,9 @@
   margin: 0 auto;
   width: 30%;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid rgb(195, 23, 23);
   /* text-align: center; */
+  background-image: linear-gradient(rgb(244, 174, 174), green);
   margin-top: 100px;
 }
 #user-input {
@@ -20,6 +21,7 @@
   margin-left: 40px;
   font-size: 20px;
   color: green;
+  background-color: rgb(254, 223, 223);
 }
 ul {
   width: 100%;
@@ -28,7 +30,7 @@ ul {
   margin: 30px;
 }
 h1 {
-  color: green;
+  color: white;
   margin-left: 20px;
   padding: 20px;
 }
@@ -37,17 +39,22 @@ h1 {
   padding: 20px;
   list-style-type: none;
   /* margin-right: 30px; */
-  width: 80%;
+  width: 42%;
+  height: 10px;
   font-size: 20px;
   color: gray;
   border: 1px solid rgb(95, 233, 95);
   background-color: rgb(226, 252, 226);
   margin: 10px;
 }
+#list li span {
+  width: 80%;
+  height: auto;
+}
 .fa-xmark,
 .fa-pencil,
 .fa-check {
-  margin-left: 40px;
+  margin-left: 20px;
   font-size: 20px;
 }
 .fa-xmark {
@@ -55,6 +62,7 @@ h1 {
 }
 .fa-check {
   color: rgb(88, 214, 88);
+  margin-left: 80px;
 }
 .fa-xmark:hover {
 }
@@ -65,7 +73,7 @@ h1 {
 }
 #btn {
   margin-left: 30px;
-  padding: 10px;
+  padding: 4px 10px;
   border: 3px solid rgb(30, 210, 81);
   color: chocolate;
   font-size: 20px;
