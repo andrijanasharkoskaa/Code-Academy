@@ -8,19 +8,23 @@
   padding: 40px;
   margin: 0 auto;
   width: 30%;
-  height: auto;
-  border: 1px solid rgb(195, 23, 23);
+  height: 500px;
+  border-top: 1px solid rgb(195, 23, 23);
+  border-left: 6px solid rgb(195, 23, 23);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px gray;
   /* text-align: center; */
-  background-image: linear-gradient(rgb(244, 174, 174), green);
+
   margin-top: 100px;
 }
 #user-input {
-  border: 1px solid rgb(99, 195, 99);
+  border: 1px solid chocolate;
+  border-radius: 10px;
   width: 280px;
   height: 30px;
   margin-left: 40px;
   font-size: 20px;
-  color: green;
+  /* color: green; */
   background-color: rgb(254, 223, 223);
 }
 ul {
@@ -30,35 +34,48 @@ ul {
   margin: 30px;
 }
 h1 {
-  color: white;
+  color: chocolate;
   margin-left: 20px;
   padding: 20px;
 }
 .todo ul li {
   text-align: left;
-  padding: 20px;
+  padding: 30px;
   list-style-type: none;
   /* margin-right: 30px; */
   width: 42%;
   height: 10px;
   font-size: 20px;
-  color: gray;
   border: 1px solid rgb(95, 233, 95);
-  background-color: rgb(226, 252, 226);
+  background-color: chocolate;
+  color: white;
+  border: 10px;
   margin: 10px;
 }
-#list li span {
-  width: 80%;
-  height: auto;
+/* .p-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
+.user-input-span {
+  width: 30%;
+  height: 40px;
+}
+.icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 70%;
+} */
 .fa-xmark,
 .fa-pencil,
 .fa-check {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-size: 20px;
 }
 .fa-xmark {
-  color: red;
+  color: white;
 }
 .fa-check {
   color: rgb(88, 214, 88);
@@ -67,19 +84,21 @@ h1 {
 .fa-xmark:hover {
 }
 .fa-pencil {
-  color: rgb(97, 97, 255);
+  color: rgb(19, 19, 93);
 }
 .list-item {
 }
 #btn {
   margin-left: 30px;
   padding: 4px 10px;
-  border: 3px solid rgb(30, 210, 81);
-  color: chocolate;
+  background-color: chocolate;
+  color: white;
   font-size: 20px;
   font-weight: 700;
   width: 140px;
   text-align: center;
+  border: none;
+  border-radius: 20px;
 }
 .completed {
   text-decoration: line-through;
