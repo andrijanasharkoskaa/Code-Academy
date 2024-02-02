@@ -1,41 +1,57 @@
 const list = document.getElementById("list");
 const btn = document.getElementById("btn");
-// const xButton = document.querySelectorAll(".fa-xmark");
-
 const userInput = document.getElementById("user-input");
-
-const parent = document.querySelector(".todo");
 
 function addToDoItem() {
   const newItem = document.createElement("li");
   newItem.classList.add("list-item");
-  newItem.id = "list-item";
-  newItem.innerHTML = `${userInput.value} <i class="fa-solid fa-xmark" onclick="removeItem()"></i> <i class="fa-solid fa-pencil" onclick="editItem()"></i>`;
+  newItem.innerHTML = `${userInput.value} <i class="fa-solid fa-check" onclick="complete(this)"> </i> <i class="fa-solid fa-pencil" onclick="editItem(this)"></i> <i class="fa-solid fa-xmark" onclick="removeItem(this)">`;
   list.appendChild(newItem);
+
+  saveToLocalStorage(userInput.value);
+
   userInput.value = "";
 }
+
 btn.addEventListener("click", addToDoItem);
 
-function removeItem() {}
+function removeItem(element) {
+  element.parentElement.remove();
+
+  removeFromLocalStorage(element.parentElement.innerText.trim());
+}
+
 function editItem() {}
-// const todos = [{ id: 0, title: "hello" }];
-// localStorage.setItem("item", JSON.stringify(todos));
 
-// var storedTodos = JSON.parse(localStorage.getItem("item"));
-// localStorage.clear();
+function saveToLocalStorage(item) {
+  const storedItems = JSON.parse(localStorage.getItem("todos")) || [];
 
-console.log(storedTodos);
+  storedItems.push(item);
+
+  localStorage.setItem("todos", JSON.stringify(storedItems));
+}
+
+function removeFromLocalStorage(item) {
+  const storedItems = JSON.parse(localStorage.getItem("todos")) || [];
+
+  const updatedItems = storedItems.filter((todo) => todo !== item);
+
+  localStorage.setItem("todos", JSON.stringify(updatedItems));
+}
 
 window.onload = function () {
-  // Check for LocalStorage support.
-  if (localStorage) {
-    // Add an event listener for form submissions
-    document.getElementById("list").addEventListener("submit", function () {
-      // Get the value of the name field.
-      var item = document.getElementById("list-item").value;
-
-      // Save the name in localStorage.
-      localStorage.setItem("item", item);
-    });
-  }
+  const storedItems = JSON.parse(localStorage.getItem("todos")) || [];
+  storedItems.forEach((item) => {
+    const newItem = document.createElement("li");
+    newItem.classList.add("list-item");
+    newItem.innerHTML = `${item} <i class="fa-solid fa-check" onclick="complete(this)">  <i class="fa-solid fa-pencil" onclick="editItem(this)"></i> <i class="fa-solid fa-xmark" onclick="removeItem(this)"></i>`;
+    list.appendChild(newItem);
+  });
 };
+
+function complete(element) {
+  if (element) {
+    element.parentElement.classList.toggle("completed");
+  }
+}
+localStorage.clear();
