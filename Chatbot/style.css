@@ -26,6 +26,11 @@
   color: white;
   padding: 10px;
 }
+#user-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: last baseline;
+}
 .display-class-none {
   display: none;
 }
@@ -37,7 +42,7 @@
 #chatbox-icon {
   width: fit-content;
   height: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   z-index: 1;
   position: absolute;
   bottom: 0;

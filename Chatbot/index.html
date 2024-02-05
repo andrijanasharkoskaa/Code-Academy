@@ -12,7 +12,14 @@
   </head>
   <body>
     <div id="chatbot-container">
-      <div id="exit-header"><i class="fa-solid fa-xmark"></i></div>
+      <div id="exit-header">
+        <a href="#" onclick="closeChat()"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+
+      <div id="user-input">
+        <input type="text" />
+        <button>Send</button>
+      </div>
     </div>
 
     <div id="chatbox-icon">
