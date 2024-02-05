@@ -1,7 +1,7 @@
 let messageEl = document.getElementById("messages");
-let chatBtn = document.getElementById("chat-btn");
 let askInput = document.getElementById("ask");
 let chat = document.getElementById("chat");
+let exitIcon = document.getElementById("exit-icon");
 
 let chatMessages = [
   ["Today is Monday"],
@@ -21,20 +21,26 @@ function askQuestion() {
     chatMessages.forEach((message) => {
       if (message[0].toLowerCase().includes(keyword)) {
         let response = document.createElement("li");
+
         response.classList.add("response", "outgoing");
         response.innerText = message[0];
         messageEl.appendChild(response);
+      } else {
+        response.innerText = "Please enter a valid question";
       }
     });
   }, 1500);
 }
-let close = document.getElementById("close");
+
 function closeChat() {
   chat.style.display = "none";
-  let exitIcon = document.getElementsById("exit-icon");
-  exitIcon.innerHTML = "";
+  exitIcon.style.display = "none";
+  document.getElementById("chat-icon").style.display = "block";
+  chat.style.border = "none";
 }
+
 function openChat() {
   chat.style.display = "block";
-  closes.style.display = "none";
+  exitIcon.style.display = "block";
+  document.getElementById("chat-icon").style.display = "none";
 }

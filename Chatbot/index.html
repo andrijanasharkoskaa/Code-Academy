@@ -12,27 +12,22 @@
   </head>
   <body>
     <div id="chat-box">
-      <div id="chat">
+      <div id="exit-icon" style="display: none">
+        <a href="#" onclick="closeChat()">X</a>
+      </div>
+      <div id="chat" style="display: none">
         <div id="messages"></div>
         <div class="send-question">
           <input type="text" id="ask" />
-
           <button id="chat-btn" onclick="askQuestion()">Send</button>
         </div>
       </div>
-
-      <div class="chat-icon">
-        <div id="exit-icon"><a href="#" onclick="closeChat()">X</a></div>
-        <a href="#"
-          ><i
-            class="fa-solid fa-comment-dots"
-            onclick="openChat()"
-            id="close"
-          ></i
-        ></a>
-      </div>
     </div>
-
+    <div class="chat-icon">
+      <a href="#" onclick="openChat()">
+        <i class="fa-solid fa-comment-dots" id="chat-icon"></i>
+      </a>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
