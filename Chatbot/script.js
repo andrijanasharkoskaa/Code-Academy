@@ -17,17 +17,18 @@ function askQuestion() {
   messageEl.appendChild(userInput);
 
   setTimeout(() => {
-    const keyword = askInput.value.toLowerCase();
     chatMessages.forEach((message) => {
       if (message[0].toLowerCase().includes(keyword)) {
         let response = document.createElement("li");
+        const keyword = askInput.value.toLowerCase();
 
         response.classList.add("response", "outgoing");
         response.innerText = message[0];
         messageEl.appendChild(response);
-      } else {
-        response.innerText = "Please enter a valid question";
       }
+      //  else {
+      //   response.innerText = "Please enter a valid question";
+      // }
     });
   }, 1500);
 }
