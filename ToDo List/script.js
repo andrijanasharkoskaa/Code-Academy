@@ -44,7 +44,7 @@ window.onload = function () {
   storedItems.forEach((item) => {
     const newItem = document.createElement("li");
     newItem.classList.add("list-item");
-    newItem.innerHTML = `${item} <i class="fa-solid fa-check" onclick="complete(this)"> <i class="fa-solid fa-xmark" onclick="removeItem(this)"></i> <i class="fa-solid fa-pencil" onclick="editItem(this)"></i>`;
+    newItem.innerHTML = `${item} <i class="fa-solid fa-check" onclick="complete(this)"> <</i> <i class="fa-solid fa-pencil" onclick="editItem(this)"></i>i class="fa-solid fa-xmark" onclick="removeItem(this)">`;
     list.appendChild(newItem);
   });
 };

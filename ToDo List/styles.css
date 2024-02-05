@@ -40,7 +40,7 @@ h1 {
 }
 .todo ul li {
   text-align: left;
-  padding: 30px;
+  padding: 20px;
   list-style-type: none;
   /* margin-right: 30px; */
   width: 42%;
@@ -57,6 +57,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
 .user-input-span {
   width: 30%;
