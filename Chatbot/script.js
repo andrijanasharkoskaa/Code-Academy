@@ -7,12 +7,13 @@ let questions = document.getElementById("questions");
 
 let answers = [
   "Javascript is the best programming language",
-  "I am good, thank you for the question",
+  "HTML is a markup language used for outlining the document's structure",
+  "CSS is used for styling websites",
 ];
 
 function askQuestion() {
   let newQuestion = document.createElement("li");
-  newQuestion.innerText = userInput.value;
+  newQuestion.innerHTML = `${userInput.value}<i class="fa-solid fa-user"></i>`;
   newQuestion.classList.add("new-question");
   questions.appendChild(newQuestion);
 
@@ -21,7 +22,7 @@ function askQuestion() {
   answers.forEach((answer) => {
     if (answer.toLowerCase().includes(userInput.value.toLowerCase())) {
       let answerEl = document.createElement("li");
-      answerEl.innerText = answer;
+      answerEl.innerHTML = `<i class="fa-solid fa-robot"></i> ${answer}`;
       answerEl.classList.add("answer");
       questions.appendChild(answerEl);
       answerFound = true;
@@ -30,7 +31,7 @@ function askQuestion() {
 
   if (!answerFound) {
     let noAnswerEl = document.createElement("li");
-    noAnswerEl.innerText = "No matching answer found.";
+    noAnswerEl.innerHTML = `<i class="fa-solid fa-robot"></i>No matching answer found.`;
     noAnswerEl.classList.add("answer");
     questions.appendChild(noAnswerEl);
   }

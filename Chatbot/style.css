@@ -43,6 +43,7 @@
   border: 1px solid green;
   font-size: 20px;
   color: gray;
+  border-bottom: none;
 }
 
 #send-btn {
@@ -89,7 +90,7 @@
   color: gray;
   list-style-type: none;
   text-align: right;
-  background-color: gray;
+  background-color: rgb(130, 130, 130);
   color: white;
   margin-top: 10px;
   border-radius: 20px;
@@ -108,4 +109,12 @@
   margin-right: 30px;
   padding: 2px 20px;
   margin-left: 4px;
+}
+.fa-user {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.fa-robot {
+  font-size: 14px;
+  margin-right: 10px;
 }
