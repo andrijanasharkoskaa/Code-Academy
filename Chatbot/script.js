@@ -42,8 +42,10 @@ function askQuestion() {
 // Function to display chat
 function openChat() {
   chatbotContainer.classList.toggle("display-class-none");
+  // chatboxIcon.classList.add("display-class-none");
 }
 // Function to close chat
 function closeChat() {
   chatbotContainer.classList.add("display-class-none");
+  // chatboxIcon.classList.add("display-class-block");
 }
