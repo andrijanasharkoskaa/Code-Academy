@@ -92,6 +92,8 @@ body {
   width: 58%;
   height: inherit;
   border: 1px solid red;
+  background-image: url(assets/giphy.gif);
+  bac
 }
 .form {
   width: 80%;
