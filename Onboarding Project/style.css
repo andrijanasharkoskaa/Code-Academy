@@ -97,7 +97,15 @@ body {
   background-position: top right 10px;
   background-size: cover;
 }
-
+.town {
+  width: 58%;
+  height: inherit;
+  /* border: 1px solid red; */
+  background-image: url(assets/second-slide.gif);
+  background-repeat: no-repeat;
+  background-position: top right 10px;
+  background-size: cover;
+}
 .form {
   width: 80%;
   height: auto;
@@ -132,6 +140,9 @@ body {
   margin-top: 14px;
   outline: purple;
   font-size: 16px;
+}
+.form-margin-top {
+  margin-top: 140px;
 }
 .terms {
   display: flex;
