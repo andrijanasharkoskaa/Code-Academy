@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/28d406b2ff.js"
       crossorigin="anonymous"
     ></script>
-    <title>Location</title>
+    <title>Hourly Rate</title>
   </head>
   <body>
     <div id="main-container">
@@ -24,9 +24,10 @@
 
               <div class="completed-line"></div>
               <div class="completed-dot"></div>
-              <div class="personal-info">Location</div>
-              <div class="uncompleted-line"></div>
-              <div class="uncompleted-dot"></div>
+
+              <div class="completed-line"></div>
+              <div class="completed-dot"></div>
+              <div class="personal-info">Hourly Rate</div>
               <div class="uncompleted-line"></div>
               <div class="uncompleted-dot"></div>
               <div class="uncompleted-line"></div>
@@ -43,26 +44,31 @@
           </div>
           <div class="form wider-input">
             <div class="back-btn">
-              <a href="social.html">
+              <a href="location.html">
                 <i class="fa-solid fa-chevron-left"></i> <span>Back</span></a
               >
             </div>
-            <h2 class="question">What City are You Based in?</h2>
+            <h2 class="question">What is Your Hourly Rate These Days?</h2>
             <p class="desc">
-              98% of A.Team missions are remote with no location requirements.
-              However, we host community events around the world — and this
-              information helps us organize.
+              We are here to empower builders to work autonomously on the
+              problems they care most about for the compensation they deserve.
             </p>
             <form action="social.html">
               <input
-                type="search"
+                type="range"
+                min="0"
+                max="300"
+                id="price"
+                name="price"
                 placeholder="Search location..."
                 id="search-input"
                 class="wider-input"
                 required
               /><br />
 
-              <button class="next orange-color-bg" id="search-btn">Next</button>
+              <button class="next orange-color-bg" id="hourly-rate">
+                Next
+              </button>
             </form>
           </div>
         </div>

@@ -266,3 +266,26 @@ input[type="file" i] {
 .back-btn a span {
   margin-left: 10px;
 }
+#search-input {
+  font-size: 20px;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.slider-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#priceRange {
+  width: 100%;
+  margin-top: 10px;
+}
