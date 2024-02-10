@@ -4,6 +4,7 @@ window.onload = function () {
     rightSection.style.backgroundImage = "url('assets/city.gif')";
   } else if (window.location.href.includes("hourly-rate.html")) {
     rightSection.style.backgroundImage = "url('assets/hourly-rate.gif')";
+    rightSection.style.backgroundImage.position = "right";
   }
 };
 

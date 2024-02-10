@@ -94,7 +94,7 @@ body {
   /* border: 1px solid red; */
   background-image: url(assets/giphy.gif);
   background-repeat: no-repeat;
-  background-position: top right 10px;
+  background-position: center;
   background-size: cover;
 }
 .town {
