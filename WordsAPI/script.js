@@ -49,21 +49,21 @@
 //   fetchData(num);
 // });
 
-let triviaEl = document.querySelector(".trivia");
-let btnCheck = document.getElementById("fetchButton");
-async function fetchDefinition(word) {
-  const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+// let triviaEl = document.querySelector(".trivia");
+// let btnCheck = document.getElementById("fetchButton");
+// async function fetchDefinition(word) {
+//   const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
 
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error(error);
-  }
-}
+//   try {
+//     const response = await fetch(url);
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
 
-fetchDefinition("love");
+// fetchDefinition("love");
 
 // btnCheck.addEventListener("click", async function () {
 //   const newWord = document.createElement("li");
