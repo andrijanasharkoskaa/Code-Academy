@@ -1,4 +1,4 @@
-// Get references to form elements
+// Changing the color of the "Next" button when all of the fields in the form are filled
 const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
 const email = document.getElementById("email");
@@ -17,3 +17,7 @@ function checkForm() {
     submitBtn.style.backgroundColor = "";
   }
 }
+
+// submitBtn.addEventListener("click", () => {
+//   window.location.href = "social.html";
+// });
