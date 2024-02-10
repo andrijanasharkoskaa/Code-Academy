@@ -21,3 +21,6 @@ function checkForm() {
 // submitBtn.addEventListener("click", () => {
 //   window.location.href = "social.html";
 // });
+document.getElementById("uploadButton").addEventListener("click", function () {
+  document.getElementById("uploadInput").click();
+});

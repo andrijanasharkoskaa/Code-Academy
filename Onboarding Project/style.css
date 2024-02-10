@@ -52,12 +52,12 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 .completed-line {
   background-color: var(--green-progress);
-  width: 3px;
-  height: 40px;
+  width: 1px;
+  height: 46px;
   margin-bottom: 2px;
   margin-top: 2px;
 }
@@ -70,8 +70,8 @@ body {
 }
 .uncompleted-line {
   background-color: var(--uncompleted-dot);
-  width: 3px;
-  height: 40px;
+  width: 1px;
+  height: 46px;
   margin-bottom: 2px;
   margin-top: 2px;
 }
@@ -100,7 +100,7 @@ body {
 .form {
   width: 80%;
   height: auto;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .question {
   margin: 14px 5px;
@@ -114,6 +114,7 @@ body {
   line-height: 143%;
   font-size: 14px;
   font-family: inherit;
+  width: 86%;
 }
 
 .form label,
@@ -168,7 +169,7 @@ body {
 .footer {
   font-size: 12px;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .links {
   display: flex;
@@ -180,4 +181,60 @@ body {
   width: 1px;
   height: 16px;
   margin: 0 10px;
+}
+.resume {
+}
+
+.upload-resume {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+input[type="file" i] {
+  appearance: none;
+  background-color: initial;
+  cursor: default;
+  align-items: baseline;
+  color: inherit;
+  text-overflow: ellipsis;
+  text-align: start !important;
+  padding: initial;
+  border: initial;
+  white-space: pre;
+  overflow: hidden !important;
+}
+.resume-desc {
+  margin-left: 10px;
+}
+.resume-desc div {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--border);
+}
+.resume-desc p {
+  color: rgb(193, 192, 192);
+  font-size: 14px;
+}
+.add {
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  overflow: hidden;
+  background-image: url(https://onboarding.a.team/builder/static/media/plus.b5f7c14467beeabbcb122891f8262209.svg);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 28px;
+  margin: 4px 0;
+}
+.upload-resume span {
+  color: white;
+  cursor: pointer;
+}
+.orange-color-bg {
+  background-color: orange;
+  cursor: pointer;
+}
+.wider-input input {
+  width: 90%;
 }

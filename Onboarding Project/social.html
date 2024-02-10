@@ -3,7 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Social</title>
   </head>
-  <body></body>
+  <body>
+    <div id="main-container">
+      <div id="left-section">
+        <div id="info-section">
+          <div id="logo">
+            <div class="progress">
+              <img src="assets/logo.png" alt="logo" />
+              <div class="completed-dot"></div>
+              <div class="completed-line"></div>
+              <div class="completed-line"></div>
+              <div class="completed-dot"></div>
+              <div class="personal-info">Social</div>
+              <div class="uncompleted-line"></div>
+              <div class="uncompleted-dot"></div>
+              <div class="uncompleted-line"></div>
+              <div class="uncompleted-dot"></div>
+              <div class="uncompleted-line"></div>
+              <div class="uncompleted-dot"></div>
+              <div class="uncompleted-line"></div>
+              <div class="uncompleted-dot"></div>
+              <div class="uncompleted-line"></div>
+              <div class="uncompleted-dot"></div>
+              <div class="uncompleted-line"></div>
+              <div class="uncompleted-dot"></div>
+              <div class="uncompleted-line"></div>
+              <div class="uncompleted-dot"></div>
+              <div class="uncompleted-line"></div>
+              <div class="uncompleted-dot"></div>
+            </div>
+          </div>
+          <div class="form wider-input">
+            <h2 class="question">Where Can We See Some of Your Work?</h2>
+            <p class="desc">
+              The more the better when it comes to sharing your past work. A
+              LinkedIn profile is great for starters, and we'd love to see any
+              additional links that showcase recent samples.
+            </p>
+            <form action="social.html">
+              <label for="linkedin">LinkedIn</label><br />
+              <input
+                type="url"
+                placeholder="https://linkedin.com/in/..."
+                id="likedin"
+                class="wider-input"
+                required
+              /><br />
+              <div class="terms">
+                <input type="checkbox" name="terms" id="checkbox" />
+                <p class="terms-conditions">I do not have a LinkedIn profile</p>
+              </div>
+              <label for="github">GitHub (optional)</label><br />
+              <input
+                type="url"
+                placeholder="https://github.com..."
+                id="github"
+                class="wider-input"
+                required
+              /><br />
+
+              <label for="personal-website">Personal Website (Optional)</label
+              ><br />
+              <input
+                type="url"
+                placeholder="https://mywebsite.com..."
+                id="personal-website"
+                class="wider-input"
+                required
+              /><br />
+              <p class="resume">Your Resume (optional)</p>
+              <div class="upload-resume">
+                <input
+                  type="file"
+                  name="upload"
+                  accept="application/pdf"
+                  id="uploadInput"
+                  hidden
+                />
+                <label for="uploadInput" class="add" id="uploadButton">
+                  <span>+</span>
+                </label>
+                <div class="resume-desc">
+                  <div>Upload your Resume</div>
+                  <p>PDF file format</p>
+                </div>
+              </div>
+              <button class="next orange-color-bg" id="uploadBtn">Next</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="copyright">© 2024 ATeams Inc., All rights reserved.</div>
+          <div class="links orange-color">
+            <a href="" class="">Terms of Service</a>
+            <div class="vertical-line"></div>
+            <a href="" class="">Privacy Policy</a>
+            <div class="vertical-line"></div>
+            <a href="" class="">Contact Us</a>
+            <div class="vertical-line"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-section"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
