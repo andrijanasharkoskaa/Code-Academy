@@ -94,13 +94,14 @@ body {
   /* border: 1px solid red; */
   background-image: url(assets/giphy.gif);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top right 10px;
   background-size: cover;
 }
+
 .form {
   width: 80%;
   height: auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .question {
   margin: 14px 5px;
@@ -120,7 +121,7 @@ body {
 .form label,
 .form input {
   color: var(--input-color);
-  margin: 30px 0;
+  margin: 25px 0;
 }
 .form input {
   width: 72%;
@@ -183,6 +184,8 @@ body {
   margin: 0 10px;
 }
 .resume {
+  font-size: 14px;
+  color: var(--input-color);
 }
 
 .upload-resume {
@@ -237,4 +240,18 @@ input[type="file" i] {
 }
 .wider-input input {
   width: 90%;
+}
+
+.back-btn a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--input-color);
+  font-weight: 400;
+}
+.back-btn {
+  padding: 10px 30px 30px;
+  margin-bottom: 10px;
+}
+.back-btn a span {
+  margin-left: 10px;
 }
