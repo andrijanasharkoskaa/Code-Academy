@@ -24,3 +24,9 @@ function checkForm() {
 document.getElementById("uploadButton").addEventListener("click", function () {
   document.getElementById("uploadInput").click();
 });
+
+let uploadBtn = document.getElementById("uploadBtn");
+
+uploadBtn.addEventListener("click", () => {
+  window.location.href = "location.html";
+});
