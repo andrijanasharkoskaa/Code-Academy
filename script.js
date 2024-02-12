@@ -215,3 +215,25 @@
 
 // 5. Create a filter option dropdown that allows users to see elements
 //from the array based on the selected rating (rating (0-5 stars));
+
+// 20. Write a JavaScript program to create another string from a given string with the first character of the given string added to the front and back.
+
+// 21. Write a JavaScript program to check whether a given positive number is a multiple of 3 or 7.
+
+// 22.Write a JavaScript program to create a string from a given string. This is done by taking the last 3 characters and adding them at both the front and back. The string length must be 3 or more.
+
+// 23.Write a JavaScript program to check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them falls within the range.
+
+// 24. Write a JavaScript program to check whether three given integer values are in the range 50..99 (inclusive). Return true if one or more of them are in the specified range.
+
+// 25.Write a JavaScript program to check whether a string "Script" appears at the 5th (index 4) position in a given string. If "Script" appears in the string, return the string without "Script" otherwise return the original one.
+
+// 26.Write a JavaScript program to find the largest of three given integers.
+
+// 27. Write a JavaScript program to find the closest value to 100 from two numerical values.
+
+// 28. Write a JavaScript program to check whether two numbers are in the range 40..60 or 70..100 inclusive.
+
+// 29.  Write a JavaScript program to find the largest number from the two given positive integers. The two numbers are in the range 40..60 inclusive.
+
+// 30. Write a program to check whether a specified character exists between the 2nd and 4th positions in a given string.
