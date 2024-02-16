@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/28d406b2ff.js"
       crossorigin="anonymous"
     ></script>
-    <title>Hourly Rate</title>
+    <title>Main Specialization</title>
   </head>
   <body>
     <div id="main-container">
@@ -20,7 +20,6 @@
               <div class="completed-dot"></div>
               <div class="completed-line"></div>
               <div class="completed-dot"></div>
-
               <div class="completed-line"></div>
               <div class="completed-dot"></div>
 
@@ -29,9 +28,10 @@
 
               <div class="completed-line"></div>
               <div class="completed-dot"></div>
-              <div class="personal-info">Hourly Rate</div>
-              <div class="uncompleted-line"></div>
-              <div class="uncompleted-dot"></div>
+
+              <div class="completed-line"></div>
+              <div class="completed-dot"></div>
+              <div class="personal-info">Main Specialization</div>
               <div class="uncompleted-line"></div>
               <div class="uncompleted-dot"></div>
               <div class="uncompleted-line"></div>
@@ -44,31 +44,39 @@
           </div>
           <div class="form wider-input">
             <div class="back-btn">
-              <a href="location.html">
+              <a href="hourly-rate.html">
                 <i class="fa-solid fa-chevron-left"></i> <span>Back</span></a
               >
             </div>
-            <h2 class="question">What is Your Hourly Rate These Days?</h2>
+            <h2 class="question">What Role Best Describes You?</h2>
             <p class="desc">
-              We are here to empower builders to work autonomously on the
-              problems they care most about for the compensation they deserve.
+              If you could only choose one, what would be your main role when
+              building with a team? Don't worry, you'll have the opportunity to
+              add secondary roles too.
             </p>
-            <form action="main_specialization.html">
+            <form action="hourly-rate.html">
               <input
-                type="range"
-                min="0"
-                max="50"
-                id="price"
-                name="price"
-                oninput="document.querySelector('output').textContent = '$' +
-              this.value;"
+                placeholder="Search your primary role..."
+                id="primary-role"
+                name="primary-role"
+                list="role"
                 required
               /><br />
-              <output>$4</output><br />
-              <span role="slider">8</span>
-              <button class="next orange-color-bg" id="hourly-rate">
-                Next
-              </button>
+              <datalist id="role">
+                <option value="Algorithms Engineer">Algorithms Engineer</option>
+                <option value="Analytics Engineer">Analytics Engineer</option>
+                <option value="Android Developer">Android Developer</option>
+                <option value="Data Scientist">Data Scientist</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Brand Designer">Brand Designer</option>
+                <option value="Content Writer">Content Writer</option>
+                <option value="Copywriter">Copywriter</option>
+                <option value="Content Writer">Content Writer</option>
+                <option value="Data Architect">Data Architect</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="UX Writer">UX Writer</option>
+              </datalist>
+              <button class="next orange-color-bg" id="search-btn">Next</button>
             </form>
           </div>
         </div>
