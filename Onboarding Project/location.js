@@ -13,3 +13,9 @@ let searchBtn = document.getElementById("search-btn");
 searchBtn.addEventListener("click", () => {
   windows.location.href = "hourly-rate.html";
 });
+
+function updateOutput(input) {
+  document.getElementById(
+    input.id.replace("price", "range-value")
+  ).textContent = input.value;
+}
