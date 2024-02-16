@@ -31,7 +31,12 @@ async function fetchData() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const result = await response.json();
-    console.log(result);
+    for (const countryCode in result) {
+      if (Object.hasOwnProperty.call(result, countryCode)) {
+        const country = result[countryCode];
+        console.log(country.name); // Print the name of the country
+      }
+    }
   } catch (error) {
     console.error(error);
   }
