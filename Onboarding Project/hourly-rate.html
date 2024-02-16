@@ -60,12 +60,11 @@
                 max="300"
                 id="price"
                 name="price"
-                placeholder="Search location..."
-                id="search-input"
-                class="wider-input"
+                value="4"
+                oninput="document.querySelector('output').textContent = this.value;"
                 required
               /><br />
-
+              <output>4</output><br />
               <button class="next orange-color-bg" id="hourly-rate">
                 Next
               </button>
