@@ -55,28 +55,38 @@
               add secondary roles too.
             </p>
             <form action="hourly-rate.html">
-              <input
-                placeholder="Search your primary role..."
-                id="primary-role"
-                name="primary-role"
-                list="role"
-                required
-              /><br />
-              <datalist id="role">
-                <option value="Algorithms Engineer">Algorithms Engineer</option>
-                <option value="Analytics Engineer">Analytics Engineer</option>
-                <option value="Android Developer">Android Developer</option>
-                <option value="Data Scientist">Data Scientist</option>
-                <option value="Backend Developer">Backend Developer</option>
-                <option value="Brand Designer">Brand Designer</option>
-                <option value="Content Writer">Content Writer</option>
-                <option value="Copywriter">Copywriter</option>
-                <option value="Content Writer">Content Writer</option>
-                <option value="Data Architect">Data Architect</option>
-                <option value="Frontend Developer">Frontend Developer</option>
-                <option value="UX Writer">UX Writer</option>
-              </datalist>
-              <button class="next orange-color-bg" id="search-btn">Next</button>
+              <div class="datalist-container">
+                <input
+                  placeholder="Search your primary role..."
+                  id="primary-role"
+                  name="primary-role"
+                  list="role"
+                  required
+                /><br />
+                <div id="roles">
+                  <datalist id="role">
+                    <option value="Algorithms Engineer">
+                      Algorithms Engineer
+                    </option>
+                    <option value="Analytics Engineer">
+                      Analytics Engineer
+                    </option>
+                    <option value="Android Developer">Android Developer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Brand Designer">Brand Designer</option>
+                    <option value="Content Writer">Content Writer</option>
+                    <option value="Copywriter">Copywriter</option>
+                    <option value="Content Writer">Content Writer</option>
+                    <option value="Data Architect">Data Architect</option>
+                    <option value="Frontend Developer">
+                      Frontend Developer
+                    </option>
+                    <option value="UX Writer">UX Writer</option>
+                  </datalist>
+                </div>
+              </div>
+              <button class="next" id="search-btn">Next</button>
             </form>
           </div>
         </div>
@@ -95,6 +105,6 @@
       <div id="right-section"></div>
     </div>
 
-    <script src="location.js"></script>
+    <script src="specialization.js"></script>
   </body>
 </html>
