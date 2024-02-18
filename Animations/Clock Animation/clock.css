@@ -4,22 +4,45 @@
   box-sizing: border-box;
 }
 .clock-outer-wrap {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   background-color: #d9b99b;
   position: relative;
   z-index: -1;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .clock {
-  width: 440px;
-  height: 440px;
+  width: 380px;
+  height: 380px;
   border-radius: 50%;
   background-color: #faf0e6;
   margin: 0 auto;
-  margin-top: 100px;
   position: absolute;
-  bottom: 10%;
-  left: 10%;
+  margin: 9px;
+}
+.arrows {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.min-arrow {
+  width: 6px;
+  height: 100px;
+  background-color: rgb(113, 113, 225);
+  margin: 0 auto;
+  margin-top: 80px;
+  border-radius: 10px;
+}
+.hour-arrow {
+  width: 6px;
+  height: 150px;
+  background-color: rgb(61, 61, 229);
+  border-radius: 10px;
+  transform: rotate(90deg);
+  margin: 0 auto;
+  margin-top: -76px;
+  margin-right: 114px;
 }
