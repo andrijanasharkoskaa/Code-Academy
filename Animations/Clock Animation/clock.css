@@ -3,19 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-.clock {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background-color: #faf0e6;
-  margin: 0 auto;
-  margin-top: 100px;
-  z-index: -1;
-}
-.color-outer-wrap {
+.clock-outer-wrap {
   width: 500px;
   height: 500px;
   border-radius: 50%;
   background-color: #d9b99b;
-  z-index: 1;
+  position: relative;
+  z-index: -1;
+}
+
+.clock {
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background-color: #faf0e6;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
 }
