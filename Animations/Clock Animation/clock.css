@@ -7,7 +7,15 @@
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background-color: blue;
+  background-color: #faf0e6;
   margin: 0 auto;
   margin-top: 100px;
+  z-index: -1;
+}
+.color-outer-wrap {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #d9b99b;
+  z-index: 1;
 }
