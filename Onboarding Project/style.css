@@ -297,11 +297,12 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 #countries {
   width: 90%;
-  height: 100px;
-  border: 1px solid black;
+  height: 200px;
+  border: 1px solid rgb(232, 230, 230);
   overflow-y: scroll;
   margin-bottom: 10px;
   display: none;
+  box-shadow: 1px 10px 10px rgb(232, 230, 230);
 }
 #countries li {
   list-style-type: none;
@@ -312,4 +313,5 @@ input[type="range"]::-webkit-slider-runnable-track {
 #countries li:hover {
   background-color: rgb(208, 202, 202);
   color: white;
+  cursor: pointer;
 }

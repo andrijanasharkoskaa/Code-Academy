@@ -1,3 +1,7 @@
+let searchBtn = document.getElementById("search-btn");
+let countries = document.getElementById("countries");
+let searchInput = document.getElementById("search-input");
+
 window.onload = function () {
   let rightSection = document.getElementById("right-section");
   if (window.location.href.includes("location.html")) {
@@ -7,8 +11,6 @@ window.onload = function () {
     rightSection.style.backgroundImage.position = "right";
   }
 };
-
-let searchBtn = document.getElementById("search-btn");
 
 searchBtn.addEventListener("click", () => {
   windows.location.href = "hourly-rate.html";
@@ -23,7 +25,6 @@ const options = {
     Authorization: "Bearer bvZGgLNMFo7Htrbeg9NWhEDju7O7iEGDZI8ffQZx",
   },
 };
-let countries = document.getElementById("countries");
 async function fetchData() {
   try {
     const response = await fetch(url, options);
@@ -46,8 +47,16 @@ async function fetchData() {
 
 fetchData();
 
-let searchInput = document.getElementById("search-input");
-
-searchInput.addEventListener("keydown", () => {
+searchInput.addEventListener("keydown", (e) => {
   countries.style.display = "block";
+
+  const searchTerm = e.target.value.toLowerCase();
+  console.log(searchTerm);
+
+  countries.forEach((country) => {
+    const countryName = country.innerText.toLowerCase();
+    if (countryName.includes(searchTerm)) {
+      console.log("yay");
+    }
+  });
 });
