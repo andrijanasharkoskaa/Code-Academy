@@ -23,7 +23,7 @@ const options = {
     Authorization: "Bearer bvZGgLNMFo7Htrbeg9NWhEDju7O7iEGDZI8ffQZx",
   },
 };
-
+let countries = document.getElementById("countries");
 async function fetchData() {
   try {
     const response = await fetch(url, options);
@@ -34,7 +34,9 @@ async function fetchData() {
     for (const countryCode in result) {
       if (Object.hasOwnProperty.call(result, countryCode)) {
         const country = result[countryCode];
-        console.log(country.name); // Print the name of the country
+        let newCountry = document.createElement("li");
+        countries.appendChild(newCountry);
+        newCountry.innerText = country.name;
       }
     }
   } catch (error) {
@@ -43,3 +45,5 @@ async function fetchData() {
 }
 
 fetchData();
+
+let searchInput = document.getElementById("search-input");

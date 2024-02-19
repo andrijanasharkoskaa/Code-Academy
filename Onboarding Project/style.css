@@ -294,3 +294,10 @@ input[type="range"]::-webkit-slider-runnable-track {
 #roles {
   width: 100%;
 }
+
+#countries {
+  width: 50%;
+  height: 100px;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
