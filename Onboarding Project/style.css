@@ -315,3 +315,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   color: white;
   cursor: pointer;
 }
+#secondary-role {
+  width: 70%;
+  height: 40px;
+}
