@@ -47,3 +47,7 @@ async function fetchData() {
 fetchData();
 
 let searchInput = document.getElementById("search-input");
+
+searchInput.addEventListener("keydown", () => {
+  countries.style.display = "block";
+});
