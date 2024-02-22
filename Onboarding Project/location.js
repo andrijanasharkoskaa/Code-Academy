@@ -32,12 +32,29 @@ async function fetchData() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const result = await response.json();
+    console.log(result);
     for (const countryCode in result) {
       if (Object.hasOwnProperty.call(result, countryCode)) {
         const country = result[countryCode];
         let newCountry = document.createElement("li");
+        newCountry.classList.add("li.new-country");
         countries.appendChild(newCountry);
         newCountry.innerText = country.name;
+
+        searchInput.addEventListener("keydown", (e) => {
+          countries.style.display = "block";
+
+          const searchTerm = e.target.value.toLowerCase();
+          console.log(searchTerm);
+
+          const countryName = newCountry.innerText.toLowerCase();
+          if (countryName.includes(searchTerm)) {
+            newCountry.addEventListener("click", () => {
+              searchInput.value = country.name;
+              countries.style.display = "none";
+            });
+          }
+        });
       }
     }
   } catch (error) {
@@ -46,17 +63,3 @@ async function fetchData() {
 }
 
 fetchData();
-
-searchInput.addEventListener("keydown", (e) => {
-  countries.style.display = "block";
-
-  const searchTerm = e.target.value.toLowerCase();
-  console.log(searchTerm);
-
-  countries.forEach((country) => {
-    const countryName = country.innerText.toLowerCase();
-    if (countryName.includes(searchTerm)) {
-      console.log("yay");
-    }
-  });
-});

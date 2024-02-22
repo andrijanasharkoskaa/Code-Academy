@@ -315,7 +315,16 @@ input[type="range"]::-webkit-slider-runnable-track {
   color: white;
   cursor: pointer;
 }
-#secondary-role {
+.search-secondary-roles {
+  border: 1px solid black;
   width: 70%;
-  height: 40px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#secondary-role {
+  width: 94%;
+  height: fit-content;
+  border: none;
 }

@@ -45,7 +45,7 @@
           </div>
           <div class="form wider-input">
             <div class="back-btn">
-              <a href="hourly-rate.html">
+              <a href="main_specialization.html">
                 <i class="fa-solid fa-chevron-left"></i> <span>Back</span></a
               >
             </div>
@@ -54,37 +54,23 @@
               Choose another role (or a few) that you have experience working
               in.
             </p>
-            <form action="extra-specializations.html">
+            <form action="top-skills.html">
               <div class="datalist-container">
-                <input
-                  placeholder="Select secondary roles..."
-                  id="secondary-role"
-                  name="primary-role"
-                  list="role"
-                  required
-                /><br />
-                <div id="roles">
-                  <datalist id="role">
-                    <option value="Algorithms Engineer">
-                      Algorithms Engineer
-                    </option>
-                    <option value="Analytics Engineer">
-                      Analytics Engineer
-                    </option>
-                    <option value="Android Developer">Android Developer</option>
-                    <option value="Data Scientist">Data Scientist</option>
-                    <option value="Backend Developer">Backend Developer</option>
-                    <option value="Brand Designer">Brand Designer</option>
-                    <option value="Content Writer">Content Writer</option>
-                    <option value="Copywriter">Copywriter</option>
-                    <option value="Content Writer">Content Writer</option>
-                    <option value="Data Architect">Data Architect</option>
-                    <option value="Frontend Developer">
-                      Frontend Developer
-                    </option>
-                    <option value="UX Writer">UX Writer</option>
-                  </datalist>
+                <div class="search-secondary-roles">
+                  <input
+                    placeholder="Select secondary roles..."
+                    id="secondary-role"
+                    name="primary-role"
+                    list="role"
+                    required
+                  />
+                  <i
+                    class="fa-solid fa-caret-down"
+                    id="secondary-roles-btn"
+                  ></i>
                 </div>
+
+                <br />
               </div>
               <button class="next" id="search-btn">Next</button>
             </form>
